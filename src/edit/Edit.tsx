@@ -117,6 +117,53 @@ const HandleTag: React.FC<{ handle: string; cuts: number[] }> = ({
   );
 };
 
+const Name: React.FC<{ size: number }> = ({ size }) => (
+  <div
+    style={{
+      fontFamily: SANS,
+      fontSize: size,
+      letterSpacing: "-0.01em",
+      color: COLORS.white,
+    }}
+  >
+    <span style={{ fontWeight: 700 }}>Thiara</span>{" "}
+    <span style={{ fontWeight: 500 }}>Fumiere</span>
+  </div>
+);
+
+// Her name over the opening seconds, same white-with-shadow look as the
+// captions.
+const NameTag: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps, durationInFrames } = useVideoConfig();
+  const t = interpolate(
+    frame,
+    [0, 10, durationInFrames - 8, durationInFrames],
+    [0, 1, 1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+  );
+  const rise = interpolate(frame, [0, 12], [16, 0], {
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  return (
+    <AbsoluteFill
+      style={{
+        top: "80%",
+        bottom: "auto",
+        alignItems: "center",
+        opacity: t,
+        filter: `blur(${(1 - Math.min(1, frame / (fps / 3))) * 8}px)`,
+        transform: `translateY(${rise}px)`,
+        textShadow:
+          "0 3px 6px rgba(0, 0, 0, 0.45), 0 6px 22px rgba(0, 0, 0, 0.35)",
+      }}
+    >
+      <Name size={62} />
+    </AbsoluteFill>
+  );
+};
+
 const EndCard: React.FC<{ handle: string }> = ({ handle }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -162,13 +209,15 @@ const EndCard: React.FC<{ handle: string }> = ({ handle }) => {
           style={{
             ...appear(10),
             fontFamily: SERIF,
-            fontStyle: "italic",
-            fontSize: 150,
+            fontSize: 170,
             lineHeight: 0.9,
             color: COLORS.gold,
           }}
         >
           Viva Melhor
+        </div>
+        <div style={{ ...appear(16), marginTop: 46 }}>
+          <Name size={46} />
         </div>
         {handle ? (
           <div
@@ -227,6 +276,9 @@ export const Edit: React.FC<z.infer<typeof editSchema>> = ({
     <AbsoluteFill style={{ backgroundColor: COLORS.brown }}>
       <Footage shots={shots} />
       <Captions chunks={chunks} />
+      <Sequence from={sec(0.3, fps)} durationInFrames={sec(4.5, fps)}>
+        <NameTag />
+      </Sequence>
       {instagram ? (
         <Sequence durationInFrames={sec(END_CARD_START, fps)}>
           <HandleTag handle={instagram} cuts={cuts} />

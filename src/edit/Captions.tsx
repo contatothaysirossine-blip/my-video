@@ -9,7 +9,7 @@ import {
 import { COLORS, SANS, SERIF } from "./brand";
 import { CaptionWord, Chunk } from "./timeline";
 
-const SIZE = 58;
+const SIZE = 74;
 
 const WordView: React.FC<{ word: CaptionWord; time: number }> = ({
   word,
@@ -30,19 +30,15 @@ const WordView: React.FC<{ word: CaptionWord; time: number }> = ({
   const style: React.CSSProperties = word.emphasis
     ? {
         fontFamily: SERIF,
-        fontStyle: "italic",
         fontWeight: 400,
-        fontSize: SIZE * 1.42,
-        letterSpacing: "-0.01em",
-        color: COLORS.gold,
-        textShadow: "0 1px 2px rgba(61, 43, 31, 0.4)",
+        fontSize: SIZE * 1.4,
+        letterSpacing: "-0.005em",
       }
     : {
         fontFamily: SANS,
-        fontWeight: 600,
+        fontWeight: 700,
         fontSize: SIZE,
-        letterSpacing: "-0.035em",
-        color: COLORS.brown,
+        letterSpacing: "-0.02em",
       };
   return (
     <span
@@ -73,13 +69,15 @@ export const Captions: React.FC<{ chunks: Chunk[] }> = ({ chunks }) => {
   return (
     <AbsoluteFill
       style={{
-        top: "57%",
+        top: "62%",
         bottom: "auto",
         alignItems: "center",
         opacity: fadeOut,
-        // Dark type sits on the cream blouse; a faint cream glow keeps it
-        // legible where the blouse falls into shadow.
-        textShadow: "0 0 18px rgba(255, 247, 216, 0.7)",
+        // One colour throughout; the drop shadow carries it over the
+        // light blouse.
+        color: COLORS.white,
+        textShadow:
+          "0 3px 6px rgba(0, 0, 0, 0.45), 0 6px 22px rgba(0, 0, 0, 0.35)",
       }}
     >
       {chunk.lines.map((line, i) => (
