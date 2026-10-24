@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Easing,
   interpolate,
+  spring,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -27,6 +28,16 @@ const WordView: React.FC<{ word: CaptionWord; time: number }> = ({
       easing: Easing.out(Easing.cubic),
     },
   );
+  // Key words land with a small bounce, in time with the pop sound.
+  const bounce = word.emphasis
+    ? 0.7 +
+      0.3 *
+        spring({
+          frame: Math.round((time - word.start) * fps),
+          fps,
+          config: { damping: 10, stiffness: 190 },
+        })
+    : 1;
   const style: React.CSSProperties = word.emphasis
     ? {
         fontFamily: SERIF,
@@ -48,7 +59,7 @@ const WordView: React.FC<{ word: CaptionWord; time: number }> = ({
         margin: "0 0.13em",
         opacity: t,
         filter: `blur(${(1 - t) * 10}px)`,
-        transform: `translateY(${(1 - t) * 14}px)`,
+        transform: `translateY(${(1 - t) * 14}px) scale(${bounce})`,
       }}
     >
       {word.text}

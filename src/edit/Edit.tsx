@@ -31,9 +31,11 @@ export const editSchema = z.object({
 
 const sec = (s: number, fps: number) => Math.round(s * fps);
 
-const Footage: React.FC<{ shots: ReturnType<typeof buildShots> }> = ({
-  shots,
-}) => {
+const Footage: React.FC<{
+  shots: ReturnType<typeof buildShots>;
+  cuts: number[];
+  pops: number[];
+}> = ({ shots, cuts, pops }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const time = frame / fps;
@@ -42,12 +44,37 @@ const Footage: React.FC<{ shots: ReturnType<typeof buildShots> }> = ({
   const drift = interpolate(time - shot.start, [0, 4], [0, 0.015], {
     extrapolateRight: "clamp",
   });
+
+  // Whoosh: the frame rushes forward with motion blur into the cut, then
+  // settles on the new shot.
+  const cut = cuts.find((c) => time >= c - 0.12 && time < c + 0.3);
+  const rush =
+    cut === undefined
+      ? 0
+      : time < cut
+        ? interpolate(time, [cut - 0.12, cut], [0, 1], {
+            easing: Easing.in(Easing.quad),
+          })
+        : interpolate(time, [cut, cut + 0.3], [1, 0], {
+            easing: Easing.out(Easing.cubic),
+          });
+
+  // Pop: a short zoom punch on each key word.
+  const pop = pops.find((p) => time >= p && time < p + 0.3);
+  const punch =
+    pop === undefined
+      ? 0
+      : interpolate(time - pop, [0, 0.06, 0.3], [0, 1, 0], {
+          easing: Easing.out(Easing.quad),
+        });
+
   const lastFrame = sec(SOURCE_DURATION, fps) - 2;
   return (
     <AbsoluteFill
       style={{
-        transform: `scale(${shot.scale + drift})`,
+        transform: `scale(${shot.scale + drift + rush * 0.12 + punch * 0.035})`,
         transformOrigin: "50% 30%",
+        filter: rush > 0.01 ? `blur(${rush * 6}px)` : undefined,
       }}
     >
       <Sequence durationInFrames={lastFrame}>
@@ -59,6 +86,30 @@ const Footage: React.FC<{ shots: ReturnType<typeof buildShots> }> = ({
         </Freeze>
       </Sequence>
     </AbsoluteFill>
+  );
+};
+
+// Warm light wash in the brand gold and cream (like CapCut's "Impressão"),
+// fired with each whoosh and on the opening frame.
+const GlowFlash: React.FC<{ times: number[] }> = ({ times }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const time = frame / fps;
+  const at = times.find((t) => time >= t - 0.08 && time < t + 0.5);
+  if (at === undefined) return null;
+  const k = interpolate(time, [at - 0.08, at, at + 0.5], [0, 1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.quad),
+  });
+  return (
+    <AbsoluteFill
+      style={{
+        background: `radial-gradient(ellipse at 50% 45%, ${COLORS.cream} 0%, ${COLORS.gold} 100%)`,
+        mixBlendMode: "screen",
+        opacity: k * 0.82,
+      }}
+    />
   );
 };
 
@@ -274,7 +325,12 @@ export const Edit: React.FC<z.infer<typeof editSchema>> = ({
 
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.brown }}>
-      <Footage shots={shots} />
+      <Footage
+        shots={shots}
+        cuts={cuts}
+        pops={emphasisStarts.map((w) => w.start - 0.02)}
+      />
+      <GlowFlash times={[0, ...cuts]} />
       <Captions chunks={chunks} />
       <Sequence from={sec(0.3, fps)} durationInFrames={sec(4.5, fps)}>
         <NameTag />
@@ -288,6 +344,7 @@ export const Edit: React.FC<z.infer<typeof editSchema>> = ({
         <EndCard handle={instagram} />
       </Sequence>
 
+      <Audio src={staticFile("sfx/whoosh-soft.wav")} volume={0.3} />
       {cuts.map((c) => (
         <Sequence key={c} from={Math.max(0, sec(c - 0.2, fps))}>
           <Audio src={staticFile("sfx/whoosh.wav")} volume={0.3} />
