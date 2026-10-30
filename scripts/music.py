@@ -1,7 +1,8 @@
 # Minimal ambient piano + warm pad, synthesised (royalty-free by construction).
 import numpy as np, wave, sys, json
 SR=44100; DUR=float(sys.argv[2]); N=int(SR*DUR)
-rng=np.random.default_rng(7)
+VARIANT=int(sys.argv[3]) if len(sys.argv)>3 else 1
+rng=np.random.default_rng(7*VARIANT)
 out=np.zeros((N,2))
 def note(f, start, length, amp, pan):
     n=int(length*SR); t=np.arange(n)/SR
@@ -20,9 +21,16 @@ def pad(freqs,start,length,amp):
     if s>=N: return
     e=min(N,s+n); out[s:e,0]+=sig[:e-s]; out[s:e,1]+=sig[:e-s]
 m=lambda k: 440*2**((k-69)/12)
-# Fmaj7 – Am7 – Dm7 – Bbmaj7 (warm, unresolved, calm)
-prog=[[53,57,60,64],[57,60,64,67],[50,57,60,65],[46,53,57,62]]
-bar=4.8; t0=0.0; i=0
+# One calm, unresolved progression per reel
+PROGS={
+ 1:[[53,57,60,64],[57,60,64,67],[50,57,60,65],[46,53,57,62]],  # Fmaj7 Am7 Dm7 Bbmaj7
+ 2:[[50,54,57,61],[47,54,57,62],[43,50,54,59],[45,52,54,57]],  # Dmaj7 Bm7 Gmaj7 A6sus
+ 3:[[51,55,58,62],[48,55,58,63],[44,51,55,60],[46,53,55,58]],  # Ebmaj7 Cm7 Abmaj7 Bb6
+ 4:[[48,52,55,59],[52,55,59,62],[45,52,55,60],[41,48,52,57]],  # Cmaj7 Em7 Am7 Fmaj7
+ 5:[[55,59,62,66],[52,55,59,62],[48,55,59,64],[50,57,59,62]],  # Gmaj7 Em7 Cmaj7 D6
+}
+prog=PROGS[VARIANT]
+bar={1:4.8,2:5.2,3:5.0,4:4.6,5:5.6}[VARIANT]; t0=0.0; i=0
 while t0<DUR:
     ch=prog[i%4]
     pad([m(k-12) for k in ch[:2]], t0, bar*1.3, 0.010)

@@ -76,7 +76,13 @@ export const CirclesPanel: React.FC<{ t: number; height: number }> = ({
         background: `linear-gradient(180deg, ${colors.paper} 0%, #EEDFCF 100%)`,
       }}
     >
-      <Bokeh t={t} width={PANEL_W} height={height} color={colors.roseGold} seed="circles" />
+      <Bokeh
+        t={t}
+        width={PANEL_W}
+        height={height}
+        color={colors.roseGold}
+        seed="circles"
+      />
       <svg
         width={PANEL_W}
         height={height}
@@ -132,8 +138,7 @@ export const CirclesPanel: React.FC<{ t: number; height: number }> = ({
         />
         {[0, 1, 2].map((i) => {
           const reveal = ramp(t, T.reveal[i] + 0.15, 0.5);
-          const y =
-            i === 0 ? CY + 14 : CY - (RADII[i] + RADII[i - 1]) / 2 + 14;
+          const y = i === 0 ? CY + 14 : CY - (RADII[i] + RADII[i - 1]) / 2 + 14;
           const focus = focusLevels[i];
           return (
             <text

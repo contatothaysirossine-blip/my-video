@@ -49,10 +49,27 @@ export const EnergyPanel: React.FC<{
         background: `radial-gradient(ellipse at 50% 40%, ${colors.wine} 0%, ${colors.plum} 55%, ${colors.plumDeep} 100%)`,
       }}
     >
-      <Bokeh t={t} width={PANEL_W} height={height} color={colors.gold} seed={mode} count={10} />
-      <svg width={PANEL_W} height={height} style={{ position: "absolute", inset: 0 }}>
+      <Bokeh
+        t={t}
+        width={PANEL_W}
+        height={height}
+        color={colors.gold}
+        seed={mode}
+        count={10}
+      />
+      <svg
+        width={PANEL_W}
+        height={height}
+        style={{ position: "absolute", inset: 0 }}
+      >
         <defs>
-          <filter id={`soft-${mode}`} x="-50%" y="-50%" width="200%" height="200%">
+          <filter
+            id={`soft-${mode}`}
+            x="-50%"
+            y="-50%"
+            width="200%"
+            height="200%"
+          >
             <feGaussianBlur stdDeviation="18" />
           </filter>
           <radialGradient id={`core-${mode}`}>
@@ -174,7 +191,9 @@ export const EnergyPanel: React.FC<{
             color: colors.cream,
           }}
         >
-          {drain ? "Toda a energia no que não controlo" : "Recuperar a nossa energia"}
+          {drain
+            ? "Toda a energia no que não controlo"
+            : "Recuperar a nossa energia"}
         </div>
         <div
           style={{

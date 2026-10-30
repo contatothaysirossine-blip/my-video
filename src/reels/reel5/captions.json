@@ -1,0 +1,1299 @@
+{
+  "words": [
+    {
+      "text": "O",
+      "start": 0.07,
+      "end": 0.19,
+      "seg": 0
+    },
+    {
+      "text": "que",
+      "start": 0.19,
+      "end": 0.25,
+      "seg": 0
+    },
+    {
+      "text": "que",
+      "start": 0.25,
+      "end": 0.39,
+      "seg": 0
+    },
+    {
+      "text": "depende",
+      "start": 0.39,
+      "end": 0.63,
+      "seg": 0
+    },
+    {
+      "text": "de",
+      "start": 0.63,
+      "end": 0.85,
+      "seg": 0
+    },
+    {
+      "text": "mim?",
+      "start": 0.85,
+      "end": 1.01,
+      "seg": 0
+    },
+    {
+      "text": "O",
+      "start": 1.19,
+      "end": 1.49,
+      "seg": 1
+    },
+    {
+      "text": "que",
+      "start": 1.49,
+      "end": 1.55,
+      "seg": 1
+    },
+    {
+      "text": "que",
+      "start": 1.55,
+      "end": 1.67,
+      "seg": 1
+    },
+    {
+      "text": "eu",
+      "start": 1.67,
+      "end": 1.75,
+      "seg": 1
+    },
+    {
+      "text": "posso",
+      "start": 1.75,
+      "end": 1.91,
+      "seg": 1
+    },
+    {
+      "text": "influenciar",
+      "start": 1.91,
+      "end": 2.71,
+      "seg": 1
+    },
+    {
+      "text": "e",
+      "start": 2.71,
+      "end": 3.17,
+      "seg": 1
+    },
+    {
+      "text": "o",
+      "start": 3.17,
+      "end": 3.25,
+      "seg": 1
+    },
+    {
+      "text": "que",
+      "start": 3.25,
+      "end": 3.33,
+      "seg": 1
+    },
+    {
+      "text": "que",
+      "start": 3.33,
+      "end": 3.45,
+      "seg": 1
+    },
+    {
+      "text": "eu",
+      "start": 3.45,
+      "end": 3.55,
+      "seg": 1
+    },
+    {
+      "text": "não",
+      "start": 3.55,
+      "end": 3.81,
+      "seg": 1
+    },
+    {
+      "text": "controlo?",
+      "start": 3.81,
+      "end": 4.43,
+      "seg": 1
+    },
+    {
+      "text": "E",
+      "start": 4.57,
+      "end": 4.73,
+      "seg": 2
+    },
+    {
+      "text": "agora?",
+      "start": 4.73,
+      "end": 5.05,
+      "seg": 2
+    },
+    {
+      "text": "Pega",
+      "start": 5.91,
+      "end": 6.27,
+      "seg": 2
+    },
+    {
+      "text": "a",
+      "start": 6.27,
+      "end": 6.37,
+      "seg": 2
+    },
+    {
+      "text": "sua",
+      "start": 6.37,
+      "end": 6.41,
+      "seg": 2
+    },
+    {
+      "text": "xícara",
+      "start": 6.41,
+      "end": 6.61,
+      "seg": 2
+    },
+    {
+      "text": "de",
+      "start": 6.61,
+      "end": 6.77,
+      "seg": 2
+    },
+    {
+      "text": "chá,",
+      "start": 6.77,
+      "end": 7.01,
+      "seg": 2
+    },
+    {
+      "text": "toma",
+      "start": 7.15,
+      "end": 7.23,
+      "seg": 2
+    },
+    {
+      "text": "um",
+      "start": 7.23,
+      "end": 7.35,
+      "seg": 2
+    },
+    {
+      "text": "gole,",
+      "start": 7.35,
+      "end": 7.69,
+      "seg": 2
+    },
+    {
+      "text": "respira,",
+      "start": 7.99,
+      "end": 8.47,
+      "seg": 2
+    },
+    {
+      "text": "se",
+      "start": 8.66,
+      "end": 8.92,
+      "seg": 3
+    },
+    {
+      "text": "pergunte.",
+      "start": 8.92,
+      "end": 9.36,
+      "seg": 3
+    },
+    {
+      "text": "Diante",
+      "start": 9.51,
+      "end": 9.83,
+      "seg": 4
+    },
+    {
+      "text": "daquela",
+      "start": 9.83,
+      "end": 10.13,
+      "seg": 4
+    },
+    {
+      "text": "situação,",
+      "start": 10.13,
+      "end": 10.69,
+      "seg": 4
+    },
+    {
+      "text": "pensa",
+      "start": 10.89,
+      "end": 10.99,
+      "seg": 4
+    },
+    {
+      "text": "na",
+      "start": 10.99,
+      "end": 11.13,
+      "seg": 4
+    },
+    {
+      "text": "situação",
+      "start": 11.13,
+      "end": 11.55,
+      "seg": 4
+    },
+    {
+      "text": "que",
+      "start": 11.55,
+      "end": 11.77,
+      "seg": 4
+    },
+    {
+      "text": "você",
+      "start": 11.77,
+      "end": 11.93,
+      "seg": 4
+    },
+    {
+      "text": "está",
+      "start": 11.93,
+      "end": 12.07,
+      "seg": 4
+    },
+    {
+      "text": "tendo",
+      "start": 12.07,
+      "end": 12.27,
+      "seg": 4
+    },
+    {
+      "text": "aí,",
+      "start": 12.27,
+      "end": 12.37,
+      "seg": 4
+    },
+    {
+      "text": "que",
+      "start": 12.41,
+      "end": 12.47,
+      "seg": 4
+    },
+    {
+      "text": "tem",
+      "start": 12.47,
+      "end": 12.49,
+      "seg": 4
+    },
+    {
+      "text": "consumido",
+      "start": 12.49,
+      "end": 12.87,
+      "seg": 4
+    },
+    {
+      "text": "muito",
+      "start": 12.87,
+      "end": 13.21,
+      "seg": 4
+    },
+    {
+      "text": "a",
+      "start": 13.21,
+      "end": 13.37,
+      "seg": 4
+    },
+    {
+      "text": "sua",
+      "start": 13.37,
+      "end": 13.41,
+      "seg": 4
+    },
+    {
+      "text": "energia.",
+      "start": 13.41,
+      "end": 13.73,
+      "seg": 4
+    },
+    {
+      "text": "Você",
+      "start": 13.87,
+      "end": 13.95,
+      "seg": 5
+    },
+    {
+      "text": "fica",
+      "start": 13.95,
+      "end": 14.09,
+      "seg": 5
+    },
+    {
+      "text": "pensando",
+      "start": 14.09,
+      "end": 14.49,
+      "seg": 5
+    },
+    {
+      "text": "no",
+      "start": 14.49,
+      "end": 14.67,
+      "seg": 5
+    },
+    {
+      "text": "tempo",
+      "start": 14.67,
+      "end": 14.99,
+      "seg": 5
+    },
+    {
+      "text": "todo.",
+      "start": 14.99,
+      "end": 15.23,
+      "seg": 5
+    },
+    {
+      "text": "Pensa",
+      "start": 15.47,
+      "end": 15.65,
+      "seg": 5
+    },
+    {
+      "text": "nessa",
+      "start": 15.65,
+      "end": 15.85,
+      "seg": 5
+    },
+    {
+      "text": "situação.",
+      "start": 15.85,
+      "end": 16.31,
+      "seg": 5
+    },
+    {
+      "text": "Ah,",
+      "start": 16.44,
+      "end": 16.54,
+      "seg": 6
+    },
+    {
+      "text": "discussões",
+      "start": 16.7,
+      "end": 16.96,
+      "seg": 6
+    },
+    {
+      "text": "todo",
+      "start": 16.96,
+      "end": 17.14,
+      "seg": 6
+    },
+    {
+      "text": "dia",
+      "start": 17.14,
+      "end": 17.34,
+      "seg": 6
+    },
+    {
+      "text": "com",
+      "start": 17.34,
+      "end": 17.44,
+      "seg": 6
+    },
+    {
+      "text": "meu",
+      "start": 17.44,
+      "end": 17.52,
+      "seg": 6
+    },
+    {
+      "text": "marido,",
+      "start": 17.52,
+      "end": 18.0,
+      "seg": 6
+    },
+    {
+      "text": "discussões",
+      "start": 18.24,
+      "end": 18.64,
+      "seg": 6
+    },
+    {
+      "text": "com",
+      "start": 18.64,
+      "end": 18.8,
+      "seg": 6
+    },
+    {
+      "text": "o",
+      "start": 18.8,
+      "end": 18.94,
+      "seg": 6
+    },
+    {
+      "text": "filho,",
+      "start": 18.94,
+      "end": 19.26,
+      "seg": 6
+    },
+    {
+      "text": "meu",
+      "start": 19.82,
+      "end": 19.96,
+      "seg": 6
+    },
+    {
+      "text": "relacionamento",
+      "start": 19.96,
+      "end": 20.44,
+      "seg": 6
+    },
+    {
+      "text": "com",
+      "start": 20.44,
+      "end": 20.58,
+      "seg": 6
+    },
+    {
+      "text": "a",
+      "start": 20.58,
+      "end": 20.62,
+      "seg": 6
+    },
+    {
+      "text": "família.",
+      "start": 20.62,
+      "end": 21.1,
+      "seg": 6
+    },
+    {
+      "text": "Meu",
+      "start": 21.19,
+      "end": 21.37,
+      "seg": 7
+    },
+    {
+      "text": "relacionamento",
+      "start": 21.37,
+      "end": 21.87,
+      "seg": 7
+    },
+    {
+      "text": "no",
+      "start": 21.87,
+      "end": 22.05,
+      "seg": 7
+    },
+    {
+      "text": "trabalho,",
+      "start": 22.05,
+      "end": 22.45,
+      "seg": 7
+    },
+    {
+      "text": "Agora,",
+      "start": 22.59,
+      "end": 22.95,
+      "seg": 8
+    },
+    {
+      "text": "pergunte",
+      "start": 23.47,
+      "end": 23.93,
+      "seg": 8
+    },
+    {
+      "text": "para",
+      "start": 23.93,
+      "end": 24.13,
+      "seg": 8
+    },
+    {
+      "text": "você",
+      "start": 24.13,
+      "end": 24.33,
+      "seg": 8
+    },
+    {
+      "text": "mesmo.",
+      "start": 24.33,
+      "end": 24.65,
+      "seg": 8
+    },
+    {
+      "text": "O",
+      "start": 24.73,
+      "end": 25.21,
+      "seg": 9
+    },
+    {
+      "text": "que",
+      "start": 25.21,
+      "end": 25.27,
+      "seg": 9
+    },
+    {
+      "text": "que",
+      "start": 25.27,
+      "end": 25.37,
+      "seg": 9
+    },
+    {
+      "text": "depende",
+      "start": 25.37,
+      "end": 25.59,
+      "seg": 9
+    },
+    {
+      "text": "de",
+      "start": 25.59,
+      "end": 25.79,
+      "seg": 9
+    },
+    {
+      "text": "mim?",
+      "start": 25.79,
+      "end": 25.93,
+      "seg": 9
+    },
+    {
+      "text": "O",
+      "start": 26.51,
+      "end": 26.75,
+      "seg": 9
+    },
+    {
+      "text": "que",
+      "start": 26.75,
+      "end": 26.81,
+      "seg": 9
+    },
+    {
+      "text": "que",
+      "start": 26.81,
+      "end": 26.91,
+      "seg": 9
+    },
+    {
+      "text": "eu",
+      "start": 26.91,
+      "end": 26.97,
+      "seg": 9
+    },
+    {
+      "text": "posso",
+      "start": 26.97,
+      "end": 27.13,
+      "seg": 9
+    },
+    {
+      "text": "influenciar",
+      "start": 27.13,
+      "end": 27.97,
+      "seg": 9
+    },
+    {
+      "text": "e",
+      "start": 27.97,
+      "end": 28.37,
+      "seg": 9
+    },
+    {
+      "text": "o",
+      "start": 28.37,
+      "end": 28.45,
+      "seg": 9
+    },
+    {
+      "text": "que",
+      "start": 28.45,
+      "end": 28.55,
+      "seg": 9
+    },
+    {
+      "text": "eu",
+      "start": 28.55,
+      "end": 28.65,
+      "seg": 9
+    },
+    {
+      "text": "não",
+      "start": 28.65,
+      "end": 28.89,
+      "seg": 9
+    },
+    {
+      "text": "controlo",
+      "start": 28.89,
+      "end": 29.37,
+      "seg": 9
+    },
+    {
+      "text": "mesmo?",
+      "start": 29.37,
+      "end": 29.57,
+      "seg": 9
+    },
+    {
+      "text": "Que",
+      "start": 29.77,
+      "end": 29.77,
+      "seg": 9
+    },
+    {
+      "text": "não",
+      "start": 29.77,
+      "end": 29.93,
+      "seg": 9
+    },
+    {
+      "text": "tem",
+      "start": 29.93,
+      "end": 30.07,
+      "seg": 9
+    },
+    {
+      "text": "jeito",
+      "start": 30.07,
+      "end": 30.25,
+      "seg": 9
+    },
+    {
+      "text": "de",
+      "start": 30.25,
+      "end": 30.37,
+      "seg": 9
+    },
+    {
+      "text": "controlar.",
+      "start": 30.37,
+      "end": 30.69,
+      "seg": 9
+    },
+    {
+      "text": "Anotou?",
+      "start": 30.81,
+      "end": 31.29,
+      "seg": 10
+    },
+    {
+      "text": "Pensou?",
+      "start": 31.65,
+      "end": 32.11,
+      "seg": 10
+    },
+    {
+      "text": "Você",
+      "start": 32.25,
+      "end": 32.53,
+      "seg": 11
+    },
+    {
+      "text": "vai",
+      "start": 32.53,
+      "end": 32.65,
+      "seg": 11
+    },
+    {
+      "text": "escolher",
+      "start": 32.65,
+      "end": 33.11,
+      "seg": 11
+    },
+    {
+      "text": "uma",
+      "start": 33.11,
+      "end": 34.33,
+      "seg": 11
+    },
+    {
+      "text": "atitude",
+      "start": 34.33,
+      "end": 34.79,
+      "seg": 11
+    },
+    {
+      "text": "que",
+      "start": 34.79,
+      "end": 35.11,
+      "seg": 11
+    },
+    {
+      "text": "pertença",
+      "start": 35.11,
+      "end": 35.47,
+      "seg": 11
+    },
+    {
+      "text": "ao",
+      "start": 35.47,
+      "end": 35.55,
+      "seg": 11
+    },
+    {
+      "text": "primeiro",
+      "start": 35.55,
+      "end": 35.85,
+      "seg": 11
+    },
+    {
+      "text": "círculo.",
+      "start": 35.85,
+      "end": 36.33,
+      "seg": 11
+    },
+    {
+      "text": "O",
+      "start": 36.49,
+      "end": 36.63,
+      "seg": 12
+    },
+    {
+      "text": "que",
+      "start": 36.63,
+      "end": 36.77,
+      "seg": 12
+    },
+    {
+      "text": "depende",
+      "start": 36.77,
+      "end": 37.27,
+      "seg": 12
+    },
+    {
+      "text": "de",
+      "start": 37.27,
+      "end": 37.55,
+      "seg": 12
+    },
+    {
+      "text": "mim.",
+      "start": 37.55,
+      "end": 37.73,
+      "seg": 12
+    },
+    {
+      "text": "É",
+      "start": 37.84,
+      "end": 37.9,
+      "seg": 13
+    },
+    {
+      "text": "para",
+      "start": 37.9,
+      "end": 37.98,
+      "seg": 13
+    },
+    {
+      "text": "você",
+      "start": 37.98,
+      "end": 38.16,
+      "seg": 13
+    },
+    {
+      "text": "escolher",
+      "start": 38.16,
+      "end": 38.4,
+      "seg": 13
+    },
+    {
+      "text": "uma",
+      "start": 38.4,
+      "end": 38.72,
+      "seg": 13
+    },
+    {
+      "text": "atitude",
+      "start": 38.72,
+      "end": 39.14,
+      "seg": 13
+    },
+    {
+      "text": "que",
+      "start": 39.14,
+      "end": 39.32,
+      "seg": 13
+    },
+    {
+      "text": "depende",
+      "start": 39.32,
+      "end": 39.6,
+      "seg": 13
+    },
+    {
+      "text": "de",
+      "start": 39.6,
+      "end": 39.82,
+      "seg": 13
+    },
+    {
+      "text": "você.",
+      "start": 39.82,
+      "end": 40.02,
+      "seg": 13
+    },
+    {
+      "text": "Talvez",
+      "start": 40.18,
+      "end": 40.4,
+      "seg": 14
+    },
+    {
+      "text": "conversar,",
+      "start": 40.4,
+      "end": 41.12,
+      "seg": 14
+    },
+    {
+      "text": "talvez",
+      "start": 41.6,
+      "end": 41.84,
+      "seg": 14
+    },
+    {
+      "text": "parar",
+      "start": 41.84,
+      "end": 42.08,
+      "seg": 14
+    },
+    {
+      "text": "de",
+      "start": 42.08,
+      "end": 42.24,
+      "seg": 14
+    },
+    {
+      "text": "insistir,",
+      "start": 42.24,
+      "end": 42.82,
+      "seg": 14
+    },
+    {
+      "text": "talvez",
+      "start": 43.4,
+      "end": 43.58,
+      "seg": 14
+    },
+    {
+      "text": "estabelecer",
+      "start": 43.58,
+      "end": 44.1,
+      "seg": 14
+    },
+    {
+      "text": "o",
+      "start": 44.1,
+      "end": 44.22,
+      "seg": 14
+    },
+    {
+      "text": "limite,",
+      "start": 44.22,
+      "end": 44.52,
+      "seg": 14
+    },
+    {
+      "text": "talvez",
+      "start": 45.18,
+      "end": 45.66,
+      "seg": 14
+    },
+    {
+      "text": "voltar",
+      "start": 45.66,
+      "end": 46.24,
+      "seg": 14
+    },
+    {
+      "text": "a",
+      "start": 46.24,
+      "end": 46.62,
+      "seg": 14
+    },
+    {
+      "text": "cuidar",
+      "start": 46.62,
+      "end": 47.0,
+      "seg": 14
+    },
+    {
+      "text": "da",
+      "start": 47.0,
+      "end": 47.18,
+      "seg": 14
+    },
+    {
+      "text": "área",
+      "start": 47.18,
+      "end": 47.42,
+      "seg": 14
+    },
+    {
+      "text": "da",
+      "start": 47.42,
+      "end": 47.52,
+      "seg": 14
+    },
+    {
+      "text": "sua",
+      "start": 47.52,
+      "end": 47.64,
+      "seg": 14
+    },
+    {
+      "text": "vida",
+      "start": 47.64,
+      "end": 47.86,
+      "seg": 14
+    },
+    {
+      "text": "que",
+      "start": 47.86,
+      "end": 47.98,
+      "seg": 14
+    },
+    {
+      "text": "você",
+      "start": 47.98,
+      "end": 48.18,
+      "seg": 14
+    },
+    {
+      "text": "abandonou",
+      "start": 48.18,
+      "end": 48.78,
+      "seg": 14
+    },
+    {
+      "text": "por",
+      "start": 48.78,
+      "end": 48.98,
+      "seg": 14
+    },
+    {
+      "text": "causa",
+      "start": 48.98,
+      "end": 49.12,
+      "seg": 14
+    },
+    {
+      "text": "daquela",
+      "start": 49.12,
+      "end": 49.42,
+      "seg": 14
+    },
+    {
+      "text": "situação",
+      "start": 49.42,
+      "end": 49.88,
+      "seg": 14
+    },
+    {
+      "text": "ou",
+      "start": 49.88,
+      "end": 50.1,
+      "seg": 14
+    },
+    {
+      "text": "na",
+      "start": 50.1,
+      "end": 50.18,
+      "seg": 14
+    },
+    {
+      "text": "tentativa",
+      "start": 50.18,
+      "end": 50.56,
+      "seg": 14
+    },
+    {
+      "text": "de",
+      "start": 50.56,
+      "end": 50.66,
+      "seg": 14
+    },
+    {
+      "text": "salvar",
+      "start": 50.66,
+      "end": 50.82,
+      "seg": 14
+    },
+    {
+      "text": "o",
+      "start": 50.82,
+      "end": 50.98,
+      "seg": 14
+    },
+    {
+      "text": "seu",
+      "start": 50.98,
+      "end": 51.04,
+      "seg": 14
+    },
+    {
+      "text": "casamento.",
+      "start": 51.04,
+      "end": 51.58,
+      "seg": 14
+    },
+    {
+      "text": "Procure",
+      "start": 51.74,
+      "end": 52.14,
+      "seg": 15
+    },
+    {
+      "text": "uma,",
+      "start": 52.14,
+      "end": 52.58,
+      "seg": 15
+    },
+    {
+      "text": "uma",
+      "start": 52.8,
+      "end": 53.56,
+      "seg": 15
+    },
+    {
+      "text": "atitude",
+      "start": 53.56,
+      "end": 53.9,
+      "seg": 15
+    },
+    {
+      "text": "que",
+      "start": 53.9,
+      "end": 54.06,
+      "seg": 15
+    },
+    {
+      "text": "você",
+      "start": 54.06,
+      "end": 54.26,
+      "seg": 15
+    },
+    {
+      "text": "pode",
+      "start": 54.26,
+      "end": 54.48,
+      "seg": 15
+    },
+    {
+      "text": "fazer.",
+      "start": 54.48,
+      "end": 54.74,
+      "seg": 15
+    },
+    {
+      "text": "Então,",
+      "start": 54.86,
+      "end": 55.2,
+      "seg": 16
+    },
+    {
+      "text": "depois",
+      "start": 55.26,
+      "end": 55.4,
+      "seg": 16
+    },
+    {
+      "text": "me",
+      "start": 55.4,
+      "end": 55.5,
+      "seg": 16
+    },
+    {
+      "text": "conta",
+      "start": 55.5,
+      "end": 55.78,
+      "seg": 16
+    },
+    {
+      "text": "aqui",
+      "start": 55.78,
+      "end": 56.0,
+      "seg": 16
+    },
+    {
+      "text": "nos",
+      "start": 56.0,
+      "end": 56.2,
+      "seg": 16
+    },
+    {
+      "text": "comentários",
+      "start": 56.2,
+      "end": 56.68,
+      "seg": 16
+    },
+    {
+      "text": "qual",
+      "start": 56.68,
+      "end": 57.58,
+      "seg": 16
+    },
+    {
+      "text": "atitude",
+      "start": 57.58,
+      "end": 57.86,
+      "seg": 16
+    },
+    {
+      "text": "foi",
+      "start": 57.86,
+      "end": 58.1,
+      "seg": 16
+    },
+    {
+      "text": "essa,",
+      "start": 58.1,
+      "end": 58.46,
+      "seg": 16
+    },
+    {
+      "text": "o",
+      "start": 59.04,
+      "end": 59.14,
+      "seg": 16
+    },
+    {
+      "text": "que",
+      "start": 59.14,
+      "end": 59.2,
+      "seg": 16
+    },
+    {
+      "text": "mais",
+      "start": 59.2,
+      "end": 59.42,
+      "seg": 16
+    },
+    {
+      "text": "que",
+      "start": 59.42,
+      "end": 59.56,
+      "seg": 16
+    },
+    {
+      "text": "eu",
+      "start": 59.56,
+      "end": 59.62,
+      "seg": 16
+    },
+    {
+      "text": "posso",
+      "start": 59.62,
+      "end": 59.72,
+      "seg": 16
+    },
+    {
+      "text": "te",
+      "start": 59.72,
+      "end": 59.86,
+      "seg": 16
+    },
+    {
+      "text": "ajudar,",
+      "start": 59.86,
+      "end": 60.14,
+      "seg": 16
+    },
+    {
+      "text": "que",
+      "start": 60.26,
+      "end": 60.28,
+      "seg": 16
+    },
+    {
+      "text": "eu",
+      "start": 60.28,
+      "end": 60.34,
+      "seg": 16
+    },
+    {
+      "text": "vou",
+      "start": 60.34,
+      "end": 60.42,
+      "seg": 16
+    },
+    {
+      "text": "responder",
+      "start": 60.42,
+      "end": 60.62,
+      "seg": 16
+    },
+    {
+      "text": "a",
+      "start": 60.62,
+      "end": 60.78,
+      "seg": 16
+    },
+    {
+      "text": "você.",
+      "start": 60.78,
+      "end": 60.96,
+      "seg": 16
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 1.1
+    },
+    {
+      "start": 1.1,
+      "end": 4.5
+    },
+    {
+      "start": 4.5,
+      "end": 8.55
+    },
+    {
+      "start": 8.55,
+      "end": 9.45
+    },
+    {
+      "start": 9.45,
+      "end": 13.8
+    },
+    {
+      "start": 13.8,
+      "end": 16.4
+    },
+    {
+      "start": 16.4,
+      "end": 21.15
+    },
+    {
+      "start": 21.15,
+      "end": 22.5
+    },
+    {
+      "start": 22.5,
+      "end": 24.7
+    },
+    {
+      "start": 24.7,
+      "end": 30.75
+    },
+    {
+      "start": 30.75,
+      "end": 32.15
+    },
+    {
+      "start": 32.15,
+      "end": 36.4
+    },
+    {
+      "start": 36.4,
+      "end": 37.8
+    },
+    {
+      "start": 37.8,
+      "end": 40.1
+    },
+    {
+      "start": 40.1,
+      "end": 51.65
+    },
+    {
+      "start": 51.65,
+      "end": 54.8
+    },
+    {
+      "start": 54.8,
+      "end": 61.0
+    }
+  ],
+  "total": 61.0
+}

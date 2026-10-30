@@ -1,0 +1,1315 @@
+{
+  "words": [
+    {
+      "text": "Isso",
+      "start": 0.07,
+      "end": 0.59,
+      "seg": 0
+    },
+    {
+      "text": "não",
+      "start": 0.59,
+      "end": 0.77,
+      "seg": 0
+    },
+    {
+      "text": "é",
+      "start": 0.77,
+      "end": 1.03,
+      "seg": 0
+    },
+    {
+      "text": "posicionamento,",
+      "start": 1.03,
+      "end": 1.71,
+      "seg": 0
+    },
+    {
+      "text": "gente.",
+      "start": 1.91,
+      "end": 2.09,
+      "seg": 0
+    },
+    {
+      "text": "Isso",
+      "start": 2.81,
+      "end": 2.95,
+      "seg": 0
+    },
+    {
+      "text": "é",
+      "start": 2.95,
+      "end": 3.03,
+      "seg": 0
+    },
+    {
+      "text": "ultimato,",
+      "start": 3.03,
+      "end": 3.63,
+      "seg": 0
+    },
+    {
+      "text": "sabe?",
+      "start": 3.89,
+      "end": 4.27,
+      "seg": 0
+    },
+    {
+      "text": "Muitas",
+      "start": 4.37,
+      "end": 4.93,
+      "seg": 1
+    },
+    {
+      "text": "pessoas",
+      "start": 4.93,
+      "end": 5.21,
+      "seg": 1
+    },
+    {
+      "text": "acham",
+      "start": 5.21,
+      "end": 5.59,
+      "seg": 1
+    },
+    {
+      "text": "que",
+      "start": 5.59,
+      "end": 5.73,
+      "seg": 1
+    },
+    {
+      "text": "posicionamento",
+      "start": 5.73,
+      "end": 6.11,
+      "seg": 1
+    },
+    {
+      "text": "é",
+      "start": 6.11,
+      "end": 6.27,
+      "seg": 1
+    },
+    {
+      "text": "chegar",
+      "start": 6.27,
+      "end": 6.43,
+      "seg": 1
+    },
+    {
+      "text": "e",
+      "start": 6.43,
+      "end": 6.59,
+      "seg": 1
+    },
+    {
+      "text": "falar",
+      "start": 6.59,
+      "end": 6.65,
+      "seg": 1
+    },
+    {
+      "text": "assim,",
+      "start": 6.65,
+      "end": 6.87,
+      "seg": 1
+    },
+    {
+      "text": "ó,",
+      "start": 6.97,
+      "end": 6.97,
+      "seg": 1
+    },
+    {
+      "text": "ou",
+      "start": 7.35,
+      "end": 7.45,
+      "seg": 1
+    },
+    {
+      "text": "você",
+      "start": 7.45,
+      "end": 7.71,
+      "seg": 1
+    },
+    {
+      "text": "muda",
+      "start": 7.71,
+      "end": 8.05,
+      "seg": 1
+    },
+    {
+      "text": "isso,",
+      "start": 8.05,
+      "end": 8.33,
+      "seg": 1
+    },
+    {
+      "text": "ou",
+      "start": 8.61,
+      "end": 8.77,
+      "seg": 1
+    },
+    {
+      "text": "você",
+      "start": 8.77,
+      "end": 8.93,
+      "seg": 1
+    },
+    {
+      "text": "arruma",
+      "start": 8.93,
+      "end": 9.09,
+      "seg": 1
+    },
+    {
+      "text": "suas",
+      "start": 9.09,
+      "end": 9.29,
+      "seg": 1
+    },
+    {
+      "text": "roupas",
+      "start": 9.29,
+      "end": 9.59,
+      "seg": 1
+    },
+    {
+      "text": "e",
+      "start": 9.59,
+      "end": 9.69,
+      "seg": 1
+    },
+    {
+      "text": "vai",
+      "start": 9.69,
+      "end": 9.75,
+      "seg": 1
+    },
+    {
+      "text": "embora.",
+      "start": 9.75,
+      "end": 9.97,
+      "seg": 1
+    },
+    {
+      "text": "Quando",
+      "start": 10.12,
+      "end": 10.24,
+      "seg": 2
+    },
+    {
+      "text": "você",
+      "start": 10.24,
+      "end": 10.34,
+      "seg": 2
+    },
+    {
+      "text": "dá",
+      "start": 10.34,
+      "end": 10.4,
+      "seg": 2
+    },
+    {
+      "text": "ultimato",
+      "start": 10.4,
+      "end": 10.84,
+      "seg": 2
+    },
+    {
+      "text": "à",
+      "start": 10.84,
+      "end": 10.94,
+      "seg": 2
+    },
+    {
+      "text": "pessoa,",
+      "start": 10.94,
+      "end": 11.2,
+      "seg": 2
+    },
+    {
+      "text": "ou",
+      "start": 11.62,
+      "end": 11.74,
+      "seg": 2
+    },
+    {
+      "text": "isso,",
+      "start": 11.74,
+      "end": 11.96,
+      "seg": 2
+    },
+    {
+      "text": "ou",
+      "start": 12.22,
+      "end": 12.24,
+      "seg": 2
+    },
+    {
+      "text": "aquilo,",
+      "start": 12.24,
+      "end": 12.48,
+      "seg": 2
+    },
+    {
+      "text": "Mas",
+      "start": 12.62,
+      "end": 12.82,
+      "seg": 3
+    },
+    {
+      "text": "não",
+      "start": 12.82,
+      "end": 12.96,
+      "seg": 3
+    },
+    {
+      "text": "é",
+      "start": 12.96,
+      "end": 13.12,
+      "seg": 3
+    },
+    {
+      "text": "isso.",
+      "start": 13.12,
+      "end": 13.38,
+      "seg": 3
+    },
+    {
+      "text": "Posicionar",
+      "start": 13.59,
+      "end": 14.11,
+      "seg": 4
+    },
+    {
+      "text": "é",
+      "start": 14.11,
+      "end": 14.41,
+      "seg": 4
+    },
+    {
+      "text": "você",
+      "start": 14.41,
+      "end": 14.61,
+      "seg": 4
+    },
+    {
+      "text": "saber",
+      "start": 14.61,
+      "end": 14.95,
+      "seg": 4
+    },
+    {
+      "text": "colocar",
+      "start": 14.95,
+      "end": 15.33,
+      "seg": 4
+    },
+    {
+      "text": "os",
+      "start": 15.33,
+      "end": 15.77,
+      "seg": 4
+    },
+    {
+      "text": "seus",
+      "start": 15.77,
+      "end": 15.99,
+      "seg": 4
+    },
+    {
+      "text": "limites.",
+      "start": 15.99,
+      "end": 16.57,
+      "seg": 4
+    },
+    {
+      "text": "O",
+      "start": 16.87,
+      "end": 16.91,
+      "seg": 4
+    },
+    {
+      "text": "posicionamento",
+      "start": 16.91,
+      "end": 17.35,
+      "seg": 4
+    },
+    {
+      "text": "saudável",
+      "start": 17.35,
+      "end": 17.95,
+      "seg": 4
+    },
+    {
+      "text": "ele",
+      "start": 17.95,
+      "end": 18.33,
+      "seg": 4
+    },
+    {
+      "text": "é",
+      "start": 18.33,
+      "end": 18.41,
+      "seg": 4
+    },
+    {
+      "text": "muito",
+      "start": 18.41,
+      "end": 18.67,
+      "seg": 4
+    },
+    {
+      "text": "importante.",
+      "start": 18.67,
+      "end": 19.13,
+      "seg": 4
+    },
+    {
+      "text": "Você",
+      "start": 19.33,
+      "end": 19.61,
+      "seg": 5
+    },
+    {
+      "text": "vai",
+      "start": 19.61,
+      "end": 19.75,
+      "seg": 5
+    },
+    {
+      "text": "aprender",
+      "start": 19.75,
+      "end": 20.01,
+      "seg": 5
+    },
+    {
+      "text": "colocar",
+      "start": 20.01,
+      "end": 20.29,
+      "seg": 5
+    },
+    {
+      "text": "os",
+      "start": 20.29,
+      "end": 20.57,
+      "seg": 5
+    },
+    {
+      "text": "seus",
+      "start": 20.57,
+      "end": 20.67,
+      "seg": 5
+    },
+    {
+      "text": "limites.",
+      "start": 20.67,
+      "end": 21.15,
+      "seg": 5
+    },
+    {
+      "text": "Você",
+      "start": 21.41,
+      "end": 21.59,
+      "seg": 5
+    },
+    {
+      "text": "vai",
+      "start": 21.59,
+      "end": 21.73,
+      "seg": 5
+    },
+    {
+      "text": "aprender",
+      "start": 21.73,
+      "end": 21.99,
+      "seg": 5
+    },
+    {
+      "text": "a",
+      "start": 21.99,
+      "end": 22.09,
+      "seg": 5
+    },
+    {
+      "text": "falar.",
+      "start": 22.09,
+      "end": 22.35,
+      "seg": 5
+    },
+    {
+      "text": "Você",
+      "start": 22.57,
+      "end": 22.85,
+      "seg": 6
+    },
+    {
+      "text": "vai",
+      "start": 22.85,
+      "end": 22.97,
+      "seg": 6
+    },
+    {
+      "text": "mudar",
+      "start": 22.97,
+      "end": 23.19,
+      "seg": 6
+    },
+    {
+      "text": "suas",
+      "start": 23.19,
+      "end": 23.43,
+      "seg": 6
+    },
+    {
+      "text": "atitudes",
+      "start": 23.43,
+      "end": 24.05,
+      "seg": 6
+    },
+    {
+      "text": "com",
+      "start": 24.05,
+      "end": 24.25,
+      "seg": 6
+    },
+    {
+      "text": "relação",
+      "start": 24.25,
+      "end": 24.59,
+      "seg": 6
+    },
+    {
+      "text": "àquela",
+      "start": 24.59,
+      "end": 25.47,
+      "seg": 6
+    },
+    {
+      "text": "resposta",
+      "start": 25.47,
+      "end": 25.93,
+      "seg": 6
+    },
+    {
+      "text": "do",
+      "start": 25.93,
+      "end": 26.15,
+      "seg": 6
+    },
+    {
+      "text": "outro,",
+      "start": 26.15,
+      "end": 26.51,
+      "seg": 6
+    },
+    {
+      "text": "que",
+      "start": 26.85,
+      "end": 27.03,
+      "seg": 6
+    },
+    {
+      "text": "você",
+      "start": 27.03,
+      "end": 27.23,
+      "seg": 6
+    },
+    {
+      "text": "não",
+      "start": 27.23,
+      "end": 27.39,
+      "seg": 6
+    },
+    {
+      "text": "gostou.",
+      "start": 27.39,
+      "end": 27.81,
+      "seg": 6
+    },
+    {
+      "text": "Então,",
+      "start": 27.94,
+      "end": 28.1,
+      "seg": 7
+    },
+    {
+      "text": "posso",
+      "start": 28.18,
+      "end": 28.24,
+      "seg": 7
+    },
+    {
+      "text": "te",
+      "start": 28.24,
+      "end": 28.4,
+      "seg": 7
+    },
+    {
+      "text": "dar",
+      "start": 28.4,
+      "end": 28.48,
+      "seg": 7
+    },
+    {
+      "text": "alguns",
+      "start": 28.48,
+      "end": 28.68,
+      "seg": 7
+    },
+    {
+      "text": "exemplos",
+      "start": 28.68,
+      "end": 29.06,
+      "seg": 7
+    },
+    {
+      "text": "de",
+      "start": 29.06,
+      "end": 29.14,
+      "seg": 7
+    },
+    {
+      "text": "posicionamento?",
+      "start": 29.14,
+      "end": 29.66,
+      "seg": 7
+    },
+    {
+      "text": "Primeiro,",
+      "start": 29.83,
+      "end": 30.23,
+      "seg": 8
+    },
+    {
+      "text": "isso",
+      "start": 30.87,
+      "end": 31.17,
+      "seg": 8
+    },
+    {
+      "text": "é",
+      "start": 31.17,
+      "end": 31.43,
+      "seg": 8
+    },
+    {
+      "text": "muito",
+      "start": 31.43,
+      "end": 31.65,
+      "seg": 8
+    },
+    {
+      "text": "importante",
+      "start": 31.65,
+      "end": 32.09,
+      "seg": 8
+    },
+    {
+      "text": "para",
+      "start": 32.09,
+      "end": 32.31,
+      "seg": 8
+    },
+    {
+      "text": "mim.",
+      "start": 32.31,
+      "end": 32.45,
+      "seg": 8
+    },
+    {
+      "text": "Marido,",
+      "start": 32.62,
+      "end": 33.02,
+      "seg": 9
+    },
+    {
+      "text": "eu",
+      "start": 33.52,
+      "end": 33.64,
+      "seg": 9
+    },
+    {
+      "text": "quero",
+      "start": 33.64,
+      "end": 33.84,
+      "seg": 9
+    },
+    {
+      "text": "ir",
+      "start": 33.84,
+      "end": 34.02,
+      "seg": 9
+    },
+    {
+      "text": "na",
+      "start": 34.02,
+      "end": 34.18,
+      "seg": 9
+    },
+    {
+      "text": "casa",
+      "start": 34.18,
+      "end": 34.34,
+      "seg": 9
+    },
+    {
+      "text": "dos",
+      "start": 34.34,
+      "end": 34.5,
+      "seg": 9
+    },
+    {
+      "text": "meus",
+      "start": 34.5,
+      "end": 34.64,
+      "seg": 9
+    },
+    {
+      "text": "pais",
+      "start": 34.64,
+      "end": 34.86,
+      "seg": 9
+    },
+    {
+      "text": "esse",
+      "start": 34.86,
+      "end": 35.02,
+      "seg": 9
+    },
+    {
+      "text": "final",
+      "start": 35.02,
+      "end": 35.14,
+      "seg": 9
+    },
+    {
+      "text": "de",
+      "start": 35.14,
+      "end": 35.26,
+      "seg": 9
+    },
+    {
+      "text": "semana.",
+      "start": 35.26,
+      "end": 35.44,
+      "seg": 9
+    },
+    {
+      "text": "É",
+      "start": 35.58,
+      "end": 35.9,
+      "seg": 10
+    },
+    {
+      "text": "muito",
+      "start": 35.9,
+      "end": 36.08,
+      "seg": 10
+    },
+    {
+      "text": "importante",
+      "start": 36.08,
+      "end": 36.5,
+      "seg": 10
+    },
+    {
+      "text": "para",
+      "start": 36.5,
+      "end": 36.74,
+      "seg": 10
+    },
+    {
+      "text": "mim",
+      "start": 36.74,
+      "end": 36.9,
+      "seg": 10
+    },
+    {
+      "text": "que",
+      "start": 36.9,
+      "end": 37.28,
+      "seg": 10
+    },
+    {
+      "text": "eu",
+      "start": 37.28,
+      "end": 37.4,
+      "seg": 10
+    },
+    {
+      "text": "vá",
+      "start": 37.4,
+      "end": 37.54,
+      "seg": 10
+    },
+    {
+      "text": "lá",
+      "start": 37.54,
+      "end": 37.72,
+      "seg": 10
+    },
+    {
+      "text": "esse",
+      "start": 37.72,
+      "end": 37.92,
+      "seg": 10
+    },
+    {
+      "text": "final",
+      "start": 37.92,
+      "end": 38.1,
+      "seg": 10
+    },
+    {
+      "text": "de",
+      "start": 38.1,
+      "end": 38.22,
+      "seg": 10
+    },
+    {
+      "text": "semana.",
+      "start": 38.22,
+      "end": 38.46,
+      "seg": 10
+    },
+    {
+      "text": "E",
+      "start": 38.76,
+      "end": 38.86,
+      "seg": 10
+    },
+    {
+      "text": "é",
+      "start": 38.86,
+      "end": 38.92,
+      "seg": 10
+    },
+    {
+      "text": "muito",
+      "start": 38.92,
+      "end": 39.14,
+      "seg": 10
+    },
+    {
+      "text": "importante",
+      "start": 39.14,
+      "end": 39.56,
+      "seg": 10
+    },
+    {
+      "text": "para",
+      "start": 39.56,
+      "end": 39.76,
+      "seg": 10
+    },
+    {
+      "text": "mim",
+      "start": 39.76,
+      "end": 39.86,
+      "seg": 10
+    },
+    {
+      "text": "que",
+      "start": 39.86,
+      "end": 40.02,
+      "seg": 10
+    },
+    {
+      "text": "você",
+      "start": 40.02,
+      "end": 40.42,
+      "seg": 10
+    },
+    {
+      "text": "vá",
+      "start": 40.42,
+      "end": 40.78,
+      "seg": 10
+    },
+    {
+      "text": "junto",
+      "start": 40.78,
+      "end": 40.96,
+      "seg": 10
+    },
+    {
+      "text": "comigo",
+      "start": 40.96,
+      "end": 41.26,
+      "seg": 10
+    },
+    {
+      "text": "esse",
+      "start": 41.26,
+      "end": 41.46,
+      "seg": 10
+    },
+    {
+      "text": "final",
+      "start": 41.46,
+      "end": 41.62,
+      "seg": 10
+    },
+    {
+      "text": "de",
+      "start": 41.62,
+      "end": 41.74,
+      "seg": 10
+    },
+    {
+      "text": "semana.",
+      "start": 41.74,
+      "end": 41.92,
+      "seg": 10
+    },
+    {
+      "text": "Isso",
+      "start": 42.08,
+      "end": 42.4,
+      "seg": 11
+    },
+    {
+      "text": "aqui",
+      "start": 42.4,
+      "end": 42.74,
+      "seg": 11
+    },
+    {
+      "text": "eu",
+      "start": 42.74,
+      "end": 43.04,
+      "seg": 11
+    },
+    {
+      "text": "consigo",
+      "start": 43.04,
+      "end": 43.38,
+      "seg": 11
+    },
+    {
+      "text": "sustentar.",
+      "start": 43.38,
+      "end": 43.92,
+      "seg": 11
+    },
+    {
+      "text": "Isso",
+      "start": 44.12,
+      "end": 44.26,
+      "seg": 11
+    },
+    {
+      "text": "aqui",
+      "start": 44.26,
+      "end": 44.48,
+      "seg": 11
+    },
+    {
+      "text": "eu",
+      "start": 44.48,
+      "end": 44.56,
+      "seg": 11
+    },
+    {
+      "text": "não",
+      "start": 44.56,
+      "end": 44.64,
+      "seg": 11
+    },
+    {
+      "text": "consigo",
+      "start": 44.64,
+      "end": 45.0,
+      "seg": 11
+    },
+    {
+      "text": "mais",
+      "start": 45.0,
+      "end": 45.14,
+      "seg": 11
+    },
+    {
+      "text": "sustentar.",
+      "start": 45.14,
+      "end": 45.6,
+      "seg": 11
+    },
+    {
+      "text": "A",
+      "start": 45.71,
+      "end": 45.83,
+      "seg": 12
+    },
+    {
+      "text": "maneira",
+      "start": 45.83,
+      "end": 46.01,
+      "seg": 12
+    },
+    {
+      "text": "como",
+      "start": 46.01,
+      "end": 46.27,
+      "seg": 12
+    },
+    {
+      "text": "nós",
+      "start": 46.27,
+      "end": 46.49,
+      "seg": 12
+    },
+    {
+      "text": "falamos",
+      "start": 46.49,
+      "end": 46.89,
+      "seg": 12
+    },
+    {
+      "text": "influencia",
+      "start": 46.89,
+      "end": 47.39,
+      "seg": 12
+    },
+    {
+      "text": "o",
+      "start": 47.39,
+      "end": 47.51,
+      "seg": 12
+    },
+    {
+      "text": "nosso",
+      "start": 47.51,
+      "end": 47.57,
+      "seg": 12
+    },
+    {
+      "text": "relacionamento,",
+      "start": 47.57,
+      "end": 48.19,
+      "seg": 12
+    },
+    {
+      "text": "os",
+      "start": 48.49,
+      "end": 48.71,
+      "seg": 12
+    },
+    {
+      "text": "nossos",
+      "start": 48.71,
+      "end": 48.89,
+      "seg": 12
+    },
+    {
+      "text": "limites,",
+      "start": 48.89,
+      "end": 49.35,
+      "seg": 12
+    },
+    {
+      "text": "a",
+      "start": 49.44,
+      "end": 49.48,
+      "seg": 13
+    },
+    {
+      "text": "nossa",
+      "start": 49.48,
+      "end": 49.66,
+      "seg": 13
+    },
+    {
+      "text": "presença",
+      "start": 49.66,
+      "end": 50.2,
+      "seg": 13
+    },
+    {
+      "text": "influencia",
+      "start": 50.2,
+      "end": 50.78,
+      "seg": 13
+    },
+    {
+      "text": "o",
+      "start": 50.78,
+      "end": 50.86,
+      "seg": 13
+    },
+    {
+      "text": "nosso",
+      "start": 50.86,
+      "end": 50.96,
+      "seg": 13
+    },
+    {
+      "text": "relacionamento,",
+      "start": 50.96,
+      "end": 51.6,
+      "seg": 13
+    },
+    {
+      "text": "as",
+      "start": 51.94,
+      "end": 52.06,
+      "seg": 13
+    },
+    {
+      "text": "nossas",
+      "start": 52.06,
+      "end": 52.24,
+      "seg": 13
+    },
+    {
+      "text": "escolhas",
+      "start": 52.24,
+      "end": 52.88,
+      "seg": 13
+    },
+    {
+      "text": "também",
+      "start": 52.88,
+      "end": 53.18,
+      "seg": 13
+    },
+    {
+      "text": "vão",
+      "start": 53.18,
+      "end": 53.4,
+      "seg": 13
+    },
+    {
+      "text": "influenciar",
+      "start": 53.4,
+      "end": 53.8,
+      "seg": 13
+    },
+    {
+      "text": "o",
+      "start": 53.8,
+      "end": 53.9,
+      "seg": 13
+    },
+    {
+      "text": "nosso",
+      "start": 53.9,
+      "end": 54.02,
+      "seg": 13
+    },
+    {
+      "text": "relacionamento.",
+      "start": 54.02,
+      "end": 54.66,
+      "seg": 13
+    },
+    {
+      "text": "Mude",
+      "start": 54.76,
+      "end": 55.1,
+      "seg": 14
+    },
+    {
+      "text": "a",
+      "start": 55.1,
+      "end": 55.32,
+      "seg": 14
+    },
+    {
+      "text": "sua",
+      "start": 55.32,
+      "end": 55.48,
+      "seg": 14
+    },
+    {
+      "text": "forma",
+      "start": 55.48,
+      "end": 55.72,
+      "seg": 14
+    },
+    {
+      "text": "de",
+      "start": 55.72,
+      "end": 55.88,
+      "seg": 14
+    },
+    {
+      "text": "se",
+      "start": 55.88,
+      "end": 55.94,
+      "seg": 14
+    },
+    {
+      "text": "posicionar,",
+      "start": 55.94,
+      "end": 56.42,
+      "seg": 14
+    },
+    {
+      "text": "estabeleça",
+      "start": 56.6,
+      "end": 57.22,
+      "seg": 14
+    },
+    {
+      "text": "os",
+      "start": 57.22,
+      "end": 57.36,
+      "seg": 14
+    },
+    {
+      "text": "seus",
+      "start": 57.36,
+      "end": 57.42,
+      "seg": 14
+    },
+    {
+      "text": "limites,",
+      "start": 57.42,
+      "end": 57.84,
+      "seg": 14
+    },
+    {
+      "text": "muda",
+      "start": 57.94,
+      "end": 58.14,
+      "seg": 14
+    },
+    {
+      "text": "a",
+      "start": 58.14,
+      "end": 58.26,
+      "seg": 14
+    },
+    {
+      "text": "forma",
+      "start": 58.26,
+      "end": 58.4,
+      "seg": 14
+    },
+    {
+      "text": "de",
+      "start": 58.4,
+      "end": 58.58,
+      "seg": 14
+    },
+    {
+      "text": "falar,",
+      "start": 58.58,
+      "end": 58.82,
+      "seg": 14
+    },
+    {
+      "text": "você",
+      "start": 59.22,
+      "end": 59.44,
+      "seg": 14
+    },
+    {
+      "text": "vai",
+      "start": 59.44,
+      "end": 59.64,
+      "seg": 14
+    },
+    {
+      "text": "ter",
+      "start": 59.64,
+      "end": 59.74,
+      "seg": 14
+    },
+    {
+      "text": "um",
+      "start": 59.74,
+      "end": 59.88,
+      "seg": 14
+    },
+    {
+      "text": "grande",
+      "start": 59.88,
+      "end": 60.14,
+      "seg": 14
+    },
+    {
+      "text": "ganho",
+      "start": 60.14,
+      "end": 60.48,
+      "seg": 14
+    },
+    {
+      "text": "com",
+      "start": 60.48,
+      "end": 60.66,
+      "seg": 14
+    },
+    {
+      "text": "isso.",
+      "start": 60.66,
+      "end": 60.88,
+      "seg": 14
+    }
+  ],
+  "segments": [
+    {
+      "start": 0,
+      "end": 4.3
+    },
+    {
+      "start": 4.3,
+      "end": 10.05
+    },
+    {
+      "start": 10.05,
+      "end": 12.55
+    },
+    {
+      "start": 12.55,
+      "end": 13.5
+    },
+    {
+      "start": 13.5,
+      "end": 19.25
+    },
+    {
+      "start": 19.25,
+      "end": 22.5
+    },
+    {
+      "start": 22.5,
+      "end": 27.9
+    },
+    {
+      "start": 27.9,
+      "end": 29.75
+    },
+    {
+      "start": 29.75,
+      "end": 32.55
+    },
+    {
+      "start": 32.55,
+      "end": 35.5
+    },
+    {
+      "start": 35.5,
+      "end": 42.0
+    },
+    {
+      "start": 42.0,
+      "end": 45.65
+    },
+    {
+      "start": 45.65,
+      "end": 49.4
+    },
+    {
+      "start": 49.4,
+      "end": 54.7
+    },
+    {
+      "start": 54.7,
+      "end": 61.0
+    }
+  ],
+  "total": 61.0
+}

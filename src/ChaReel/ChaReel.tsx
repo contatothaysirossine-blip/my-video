@@ -20,17 +20,20 @@ import {
   activePanel,
   CARD_START,
   HEIGHT,
+  segmentAt,
   SPEECH_END,
   splitProgress,
   WIDTH,
+  words,
 } from "./timeline";
+import face from "../face.json";
 
 const SPLIT_VIDEO_H = 1010;
 const PANEL_H = HEIGHT - SPLIT_VIDEO_H;
 
 const lerp = (a: number, b: number, p: number) => a + (b - a) * p;
 
-const BrandTag: React.FC<{ opacity: number }> = ({ opacity }) => (
+export const BrandTag: React.FC<{ opacity: number }> = ({ opacity }) => (
   <div
     style={{
       position: "absolute",
@@ -95,7 +98,15 @@ export const ChaReel: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: colors.plumDeep }}>
       {t < SPEECH_END ? (
         <AbsoluteFill style={{ opacity: intro }}>
-          <Speaker t={t} frame={frame} areaHeight={areaH} split={p} />
+          <Speaker
+            t={t}
+            frame={frame}
+            areaHeight={areaH}
+            split={p}
+            src="cut.mp4"
+            face={face}
+            segment={segmentAt(t)}
+          />
 
           {/* legibility veil behind captions */}
           <div
@@ -125,7 +136,13 @@ export const ChaReel: React.FC = () => {
                 boxShadow: "0 -8px 40px rgba(42,12,29,0.35)",
               }}
             >
-              <div style={{ opacity: Math.min(1, p * 1.4), width: "100%", height: "100%" }}>
+              <div
+                style={{
+                  opacity: Math.min(1, p * 1.4),
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
                 {panel.kind === "circles" ? (
                   <CirclesPanel t={t} height={PANEL_H} />
                 ) : panel.kind === "self" ? (
@@ -150,7 +167,12 @@ export const ChaReel: React.FC = () => {
           ) : null}
 
           <BrandTag opacity={0.92} />
-          <Captions t={t} centerY={lerp(1560, areaH - 118, p)} />
+          <Captions
+            t={t}
+            centerY={lerp(1560, areaH - 118, p)}
+            words={words}
+            speechEnd={SPEECH_END}
+          />
         </AbsoluteFill>
       ) : null}
 

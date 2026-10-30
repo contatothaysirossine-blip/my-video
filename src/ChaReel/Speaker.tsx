@@ -1,7 +1,8 @@
 import React from "react";
 import { AbsoluteFill, OffthreadVideo, staticFile } from "remotion";
-import face from "../face.json";
-import { WIDTH, segmentAt } from "./timeline";
+import { WIDTH } from "./timeline";
+
+export type FaceTrack = { fps: number; x: number[]; y: number[] };
 
 const SRC_W = 1024;
 const SRC_H = 576;
@@ -24,13 +25,15 @@ export const Speaker: React.FC<{
   frame: number;
   areaHeight: number;
   split: number;
-}> = ({ t, frame, areaHeight, split }) => {
+  src: string;
+  face: FaceTrack;
+  segment: number;
+}> = ({ frame, t, areaHeight, split, src, face, segment }) => {
   const i = clamp(frame, 0, face.x.length - 1);
   const fx = face.x[i];
   const fy = face.y[i];
 
-  const seg = segmentAt(t);
-  const punch = seg % 2 === 1 ? 1.07 : 1;
+  const punch = segment % 2 === 1 ? 1.07 : 1;
   // Very slow drift so even long takes keep breathing.
   const drift = 1 + 0.012 * Math.sin(t / 3.2);
 
@@ -49,7 +52,7 @@ export const Speaker: React.FC<{
     <AbsoluteFill style={{ height: areaHeight, overflow: "hidden" }}>
       {split < 1 ? (
         <OffthreadVideo
-          src={staticFile("cut.mp4")}
+          src={staticFile(src)}
           muted
           style={{
             position: "absolute",
@@ -73,7 +76,7 @@ export const Speaker: React.FC<{
         }}
       >
         <OffthreadVideo
-          src={staticFile("cut.mp4")}
+          src={staticFile(src)}
           muted
           style={{
             position: "absolute",

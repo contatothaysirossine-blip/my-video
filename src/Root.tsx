@@ -1,6 +1,9 @@
 import { Composition, Folder } from "remotion";
 import { ChaReel } from "./ChaReel/ChaReel";
 import { FPS, HEIGHT, TOTAL_SECONDS, WIDTH } from "./ChaReel/timeline";
+import { Reel } from "./ChaReel/Reel";
+import { reelTiming } from "./ChaReel/engine";
+import { reels } from "./reels/configs";
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
@@ -61,6 +64,18 @@ export const RemotionRoot: React.FC = () => {
         width={WIDTH}
         height={HEIGHT}
       />
+      {reels.map((config) => (
+        <Composition
+          key={config.id}
+          id={config.id}
+          component={Reel}
+          durationInFrames={Math.round(reelTiming(config).total * FPS)}
+          fps={FPS}
+          width={WIDTH}
+          height={HEIGHT}
+          defaultProps={{ config }}
+        />
+      ))}
     </>
   );
 };

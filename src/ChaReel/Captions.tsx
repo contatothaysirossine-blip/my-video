@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { interpolate, interpolateColors } from "remotion";
 import { colors, fonts } from "./theme";
-import { SPEECH_END, Word, words } from "./timeline";
+import { Word } from "./timeline";
 
 const KEYWORDS = new Set([
   "energia",
@@ -42,7 +42,7 @@ const display = (text: string) => text.replace(/[.,;:!]+$/, "");
 type Group = { words: Word[]; start: number; end: number };
 
 // Small blocks (max ~4 words / 22 chars), broken on punctuation and pauses.
-const buildGroups = (): Group[] => {
+const buildGroups = (words: Word[]): Group[] => {
   const groups: Group[] = [];
   let cur: Word[] = [];
   const flush = () => {
@@ -61,7 +61,13 @@ const buildGroups = (): Group[] => {
       const chars = cur.map((c) => c.text).join(" ").length + w.text.length;
       const pause = w.start - prev.end > 0.32;
       const punct = /[.?!,]$/.test(prev.text);
-      if (cur.length >= 4 || chars > 22 || pause || punct || prev.seg !== w.seg) {
+      if (
+        cur.length >= 4 ||
+        chars > 22 ||
+        pause ||
+        punct ||
+        prev.seg !== w.seg
+      ) {
         flush();
       }
     }
@@ -71,13 +77,14 @@ const buildGroups = (): Group[] => {
   return groups;
 };
 
-const groups = buildGroups();
-
-export const Captions: React.FC<{ t: number; centerY: number }> = ({
-  t,
-  centerY,
-}) => {
-  if (t > SPEECH_END + 0.2) return null;
+export const Captions: React.FC<{
+  t: number;
+  centerY: number;
+  words: Word[];
+  speechEnd: number;
+}> = ({ t, centerY, words, speechEnd }) => {
+  const groups = useMemo(() => buildGroups(words), [words]);
+  if (t > speechEnd + 0.2) return null;
 
   const idx = groups.findIndex((g, i) => {
     const next = groups[i + 1];

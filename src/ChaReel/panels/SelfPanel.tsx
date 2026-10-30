@@ -45,8 +45,19 @@ export const SelfPanel: React.FC<{ t: number; height: number }> = ({
           transform: `scale(${0.9 + 0.1 * bloom})`,
         }}
       />
-      <Bokeh t={t} width={PANEL_W} height={height} color="#FFF3E3" seed="self" count={12} />
-      <svg width={PANEL_W} height={height} style={{ position: "absolute", inset: 0 }}>
+      <Bokeh
+        t={t}
+        width={PANEL_W}
+        height={height}
+        color="#FFF3E3"
+        seed="self"
+        count={12}
+      />
+      <svg
+        width={PANEL_W}
+        height={height}
+        style={{ position: "absolute", inset: 0 }}
+      >
         {new Array(RIPPLES).fill(0).map((_, i) => {
           const k = (local / 5 + i / RIPPLES) % 1;
           return (

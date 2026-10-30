@@ -45,7 +45,9 @@ export const Bokeh: React.FC<{
           style={{
             position: "absolute",
             left: x - r,
-            top: ((y % (height + 2 * r)) + height + 2 * r) % (height + 2 * r) - r,
+            top:
+              (((y % (height + 2 * r)) + height + 2 * r) % (height + 2 * r)) -
+              r,
             width: r * 2,
             height: r * 2,
             borderRadius: "50%",
