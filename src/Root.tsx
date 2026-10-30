@@ -1,4 +1,6 @@
 import { Composition, Folder } from "remotion";
+import { ChaReel } from "./ChaReel/ChaReel";
+import { FPS, HEIGHT, TOTAL_SECONDS, WIDTH } from "./ChaReel/timeline";
 import { HelloWorld } from "./HelloWorld";
 import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
@@ -50,7 +52,15 @@ export const RemotionRoot: React.FC = () => {
           titleColor: "#000000",
         }}
       />
-
+      <Composition
+        // Reel 9:16 — "Chá pra Restaurar": controle × influência (três círculos)
+        id="ChaPraRestaurar-TresCirculos"
+        component={ChaReel}
+        durationInFrames={Math.round(TOTAL_SECONDS * FPS)}
+        fps={FPS}
+        width={WIDTH}
+        height={HEIGHT}
+      />
     </>
   );
 };
