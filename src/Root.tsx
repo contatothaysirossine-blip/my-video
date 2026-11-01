@@ -1,56 +1,33 @@
-import { Composition, Folder } from "remotion";
-import { HelloWorld } from "./HelloWorld";
-import { Logo } from "./HelloWorld/Logo";
-import { Title } from "./HelloWorld/Title";
+import { Composition } from "remotion";
+import { VideoRenata, videoSchema } from "./RenataAhnert/Video";
 
-// Each <Composition> is an entry in the sidebar!
-
+// Vídeo vertical (Reels/Stories) no mesmo formato da referência: 9:16, 30fps, 15,5s.
 export const RemotionRoot: React.FC = () => {
   return (
-    <>
-      <Folder name="Elements">
-        <Composition
-          id="Logo"
-          component={Logo}
-          durationInFrames={150}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            logoColor1: "#91EAE4",
-            logoColor2: "#86A8E7",
-          }}
-        />
-        <Composition
-          id="Title"
-          component={Title}
-          durationInFrames={115}
-          fps={30}
-          width={1920}
-          height={1080}
-          defaultProps={{
-            titleText: "Welcome to Remotion",
-            titleColor: "#000000",
-          }}
-        />
-      </Folder>
-      <Composition
-        // You can take the "id" to render a video:
-        // bunx remotion render HelloWorld
-        id="HelloWorld"
-        component={HelloWorld}
-        durationInFrames={150}
-        fps={30}
-        width={1920}
-        height={1080}
-        // You can override these props for each render:
-        // https://www.remotion.dev/docs/parametrized-rendering
-        defaultProps={{
-          titleText: "Welcome to Remotion",
-          titleColor: "#000000",
-        }}
-      />
-
-    </>
+    <Composition
+      id="RenataAhnert"
+      component={VideoRenata}
+      schema={videoSchema}
+      durationInFrames={465}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        inicioEncerramento: 11.8,
+        legendas: [
+          { texto: "Sentou", inicio: 0.9, fim: 1.6 },
+          { texto: "tá ótimo", inicio: 2.0, fim: 2.7 },
+          { texto: "Make", inicio: 2.8, fim: 3.5 },
+          { texto: "isso", inicio: 5.0, fim: 5.6 },
+          { texto: "ajeita", inicio: 6.4, fim: 7.0 },
+          { texto: "cabelo", inicio: 7.0, fim: 7.6 },
+          { texto: "respira", inicio: 8.4, fim: 9.1 },
+          { texto: "já", inicio: 9.9, fim: 10.3 },
+          { texto: "eu", inicio: 10.4, fim: 10.8 },
+          { texto: "uma coisa", inicio: 10.8, fim: 11.3 },
+          { texto: "pra falar", inicio: 11.3, fim: 11.8 },
+        ],
+      }}
+    />
   );
 };
