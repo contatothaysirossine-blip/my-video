@@ -32,7 +32,7 @@ export const hiproDefaultProps: z.infer<typeof hiproSchema> = {
       title: "Lifting sem cortes",
       message: "Firmeza e definição com tecnologia HIFU.",
     },
-    { title: "Data marcada", message: "16/11 está chegando." },
+    { title: "Data marcada", message: "17/11 está chegando." },
     { title: "Não perca", message: "Fique de olho nas novidades!" },
   ],
 };
