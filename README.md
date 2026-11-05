@@ -11,23 +11,28 @@
 
 Welcome to your Remotion project!
 
-## Thiara: edição do vídeo IMG_7284
+## Thiara: edições
 
-A composição `Thiara` (`src/edit/`) aplica a edição no estilo da referência:
-legendas brancas com sombra, palavra a palavra (Montserrat + Times New
-Roman MT Condensed nas palavras-chave), nome "Thiara Fumiere" na abertura, zoom em cortes secos, efeitos sonoros discretos e
-encerramento com "Método Viva Melhor".
+Cada vídeo usa o mesmo estilo de edição (`src/edit/`): legendas brancas com
+sombra, palavra a palavra (Montserrat + Times New Roman MT Condensed nas
+palavras-chave), nome "Thiara Fumiere" na abertura, zoom em cortes secos,
+whoosh + flash dourado nas trocas de cena e pop + zoom nas palavras-chave.
 
-- `public/video.mp4`: vídeo original convertido para H.264.
-- `src/edit/words.ts`: transcrição palavra a palavra (corrija textos aqui).
-- `src/edit/timeline.ts`: palavras em destaque, cortes e zooms.
+| Composição | Vídeo | Final |
+| --- | --- | --- |
+| `Thiara` | IMG_7284 (`public/video.mp4`) | tela "Método Viva Melhor" |
+| `Thiara-DorLombar` | copy_B2AEF149 (`public/video-2.mp4`) | sem tela final |
+
+- `src/edit/videos/`: dados de cada vídeo (transcrição, palavras em destaque,
+  cortes, tela final opcional). Para um vídeo novo, crie um arquivo aqui e
+  registre em `src/edit/videos/index.ts` e `src/Root.tsx`.
 - `src/edit/brand.ts`: cores e fontes da marca (arquivos em `public/fonts/`).
 - `scripts/make-sfx.py`: gera os efeitos sonoros em `public/sfx/`.
 - Props: `instagram` (ex.: `"@thiara"`), `music` (arquivo em `public/`) e
   `musicVolume`.
 
 ```console
-npx remotion render Thiara out/thiara.mp4
+npx remotion render Thiara-DorLombar out/thiara-dor-lombar.mp4
 ```
 
 ## Commands

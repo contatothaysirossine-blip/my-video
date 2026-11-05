@@ -14,15 +14,13 @@ import {
 import { z } from "zod";
 import { COLORS, SANS, SERIF } from "./brand";
 import { Captions } from "./Captions";
-import {
-  buildChunks,
-  buildShots,
-  END_CARD_START,
-  SOURCE_DURATION,
-} from "./timeline";
+import { buildChunks, buildShots, contentEnd } from "./timeline";
+import { EditSource } from "./types";
+import { VIDEOS } from "./videos";
 
 export const editSchema = z.object({
-  // Instagram handle shown as a corner tag and on the end card, e.g. "@thiara".
+  video: z.enum(Object.keys(VIDEOS) as [keyof typeof VIDEOS]),
+  // Instagram handle shown as a corner tag (and on the end card), e.g. "@thiara".
   instagram: z.string(),
   // Optional music bed in public/, e.g. "music.mp3".
   music: z.string(),
@@ -32,10 +30,11 @@ export const editSchema = z.object({
 const sec = (s: number, fps: number) => Math.round(s * fps);
 
 const Footage: React.FC<{
+  src: EditSource;
   shots: ReturnType<typeof buildShots>;
   cuts: number[];
   pops: number[];
-}> = ({ shots, cuts, pops }) => {
+}> = ({ src, shots, cuts, pops }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const time = frame / fps;
@@ -68,7 +67,8 @@ const Footage: React.FC<{
           easing: Easing.out(Easing.quad),
         });
 
-  const lastFrame = sec(SOURCE_DURATION, fps) - 2;
+  const video = staticFile(src.video);
+  const lastFrame = sec(src.duration, fps) - 2;
   return (
     <AbsoluteFill
       style={{
@@ -77,14 +77,20 @@ const Footage: React.FC<{
         filter: rush > 0.01 ? `blur(${rush * 6}px)` : undefined,
       }}
     >
-      <Sequence durationInFrames={lastFrame}>
-        <OffthreadVideo src={staticFile("video.mp4")} />
-      </Sequence>
-      <Sequence from={lastFrame}>
-        <Freeze frame={lastFrame}>
-          <OffthreadVideo src={staticFile("video.mp4")} muted />
-        </Freeze>
-      </Sequence>
+      {src.endCard ? (
+        <>
+          <Sequence durationInFrames={lastFrame}>
+            <OffthreadVideo src={video} />
+          </Sequence>
+          <Sequence from={lastFrame}>
+            <Freeze frame={lastFrame}>
+              <OffthreadVideo src={video} muted />
+            </Freeze>
+          </Sequence>
+        </>
+      ) : (
+        <OffthreadVideo src={video} />
+      )}
     </AbsoluteFill>
   );
 };
@@ -305,13 +311,15 @@ const EndCard: React.FC<{ handle: string }> = ({ handle }) => {
 };
 
 export const Edit: React.FC<z.infer<typeof editSchema>> = ({
+  video,
   instagram,
   music,
   musicVolume,
 }) => {
   const { fps } = useVideoConfig();
-  const chunks = useMemo(() => buildChunks(), []);
-  const shots = useMemo(() => buildShots(chunks), [chunks]);
+  const src = VIDEOS[video];
+  const chunks = useMemo(() => buildChunks(src), [src]);
+  const shots = useMemo(() => buildShots(src, chunks), [src, chunks]);
   const emphasisStarts = useMemo(
     () =>
       chunks.flatMap((c) =>
@@ -326,6 +334,7 @@ export const Edit: React.FC<z.infer<typeof editSchema>> = ({
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.brown }}>
       <Footage
+        src={src}
         shots={shots}
         cuts={cuts}
         pops={emphasisStarts.map((w) => w.start - 0.02)}
@@ -336,13 +345,15 @@ export const Edit: React.FC<z.infer<typeof editSchema>> = ({
         <NameTag />
       </Sequence>
       {instagram ? (
-        <Sequence durationInFrames={sec(END_CARD_START, fps)}>
+        <Sequence durationInFrames={sec(contentEnd(src), fps)}>
           <HandleTag handle={instagram} cuts={cuts} />
         </Sequence>
       ) : null}
-      <Sequence from={sec(END_CARD_START, fps)}>
-        <EndCard handle={instagram} />
-      </Sequence>
+      {src.endCard ? (
+        <Sequence from={sec(src.endCard.start, fps)}>
+          <EndCard handle={instagram} />
+        </Sequence>
+      ) : null}
 
       <Audio src={staticFile("sfx/whoosh-soft.wav")} volume={0.3} />
       {cuts.map((c) => (

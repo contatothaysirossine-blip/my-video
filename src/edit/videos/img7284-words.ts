@@ -1,6 +1,7 @@
+import { Word } from "../types";
+
 // Word-level transcript of IMG_7284.MOV (Whisper, reviewed by hand).
 // Times are in seconds from the start of the source video.
-export type Word = { text: string; start: number; end: number };
 
 export const WORDS: Word[] = [
   { text: "Durante", start: 0.05, end: 0.93 },
