@@ -7,6 +7,7 @@ import {
   hiproDefaultProps,
   hiproSchema,
 } from "./Hipro/HiproMotion";
+import { HiproFeedback, hiproFeedbackSchema } from "./Hipro/HiproFeedback";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -64,6 +65,16 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         schema={hiproSchema}
         defaultProps={hiproDefaultProps}
+      />
+      <Composition
+        id="HiproFeedback"
+        component={HiproFeedback}
+        durationInFrames={898}
+        fps={30}
+        width={1080}
+        height={1920}
+        schema={hiproFeedbackSchema}
+        defaultProps={{ audioFile: "hipro-feedback-audio.wav" }}
       />
     </>
   );
