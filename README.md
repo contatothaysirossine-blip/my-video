@@ -21,11 +21,14 @@ whoosh + flash dourado nas trocas de cena e pop + zoom nas palavras-chave.
 | Composição | Vídeo | Final |
 | --- | --- | --- |
 | `Thiara` | IMG_7284 (`public/video.mp4`) | tela "Método Viva Melhor" |
-| `Thiara-DorLombar` | copy_B2AEF149 (`public/video-2.mp4`) | sem tela final |
+| `Thiara-DorLombar` | copy_B2AEF149 (`public/sources/`, original) | sem tela final |
 
 - `src/edit/videos/`: dados de cada vídeo (transcrição, palavras em destaque,
   cortes, tela final opcional). Para um vídeo novo, crie um arquivo aqui e
   registre em `src/edit/videos/index.ts` e `src/Root.tsx`.
+- `public/sources/` (fora do git, arquivos grandes): o vídeo original
+  `b2aef149.mov` da pasta do Drive e a voz normalizada `b2aef149-voice.wav`
+  (−14 LUFS). Renderizar direto do original evita perda de qualidade.
 - `src/edit/brand.ts`: cores e fontes da marca (arquivos em `public/fonts/`).
 - `scripts/make-sfx.py`: gera os efeitos sonoros em `public/sfx/`.
 - Props: `instagram` (ex.: `"@thiara"`), `music` (arquivo em `public/`) e

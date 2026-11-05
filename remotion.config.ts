@@ -7,4 +7,9 @@ import { Config } from "@remotion/cli/config";
 
 Config.setRspack(true);
 Config.setVideoImageFormat("jpeg");
+// Keep frames close to lossless so the footage doesn't lose detail.
+Config.setJpegQuality(100);
+Config.setCrf(16);
+Config.setPixelFormat("yuv420p");
+Config.setX264Preset("slow");
 Config.setOverwriteOutput(true);

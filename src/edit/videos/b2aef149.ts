@@ -3,7 +3,10 @@ import { WORDS } from "./b2aef149-words";
 
 // Dor lombar: fortalecer não basta, a coluna precisa de movimento.
 export const B2AEF149: EditSource = {
-  video: "video-2.mp4",
+  // The original HEVC file, read directly so no quality is lost to an
+  // intermediate transcode.
+  video: "sources/b2aef149.mov",
+  audio: "sources/b2aef149-voice.wav",
   duration: 91.8,
   words: WORDS,
   emphasis: [

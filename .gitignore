@@ -7,3 +7,6 @@ dist
 out
 my-video.zip
 raw
+
+# Full-quality sources (too large for git; see README)
+public/sources

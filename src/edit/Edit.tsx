@@ -89,7 +89,7 @@ const Footage: React.FC<{
           </Sequence>
         </>
       ) : (
-        <OffthreadVideo src={video} />
+        <OffthreadVideo src={video} muted={Boolean(src.audio)} />
       )}
     </AbsoluteFill>
   );
@@ -304,7 +304,7 @@ const EndCard: React.FC<{ handle: string }> = ({ handle }) => {
         ) : null}
       </AbsoluteFill>
       <Sequence from={sec(0.2, fps)}>
-        <Audio src={staticFile("sfx/whoosh-soft.wav")} volume={0.35} />
+        <Audio src={staticFile("sfx/whoosh-soft.wav")} volume={0.16} />
       </Sequence>
     </AbsoluteFill>
   );
@@ -355,15 +355,16 @@ export const Edit: React.FC<z.infer<typeof editSchema>> = ({
         </Sequence>
       ) : null}
 
-      <Audio src={staticFile("sfx/whoosh-soft.wav")} volume={0.3} />
+      {src.audio ? <Audio src={staticFile(src.audio)} /> : null}
+      <Audio src={staticFile("sfx/whoosh-soft.wav")} volume={0.14} />
       {cuts.map((c) => (
         <Sequence key={c} from={Math.max(0, sec(c - 0.2, fps))}>
-          <Audio src={staticFile("sfx/whoosh.wav")} volume={0.3} />
+          <Audio src={staticFile("sfx/whoosh.wav")} volume={0.13} />
         </Sequence>
       ))}
       {emphasisStarts.map((w) => (
         <Sequence key={w.start} from={sec(w.start - 0.02, fps)}>
-          <Audio src={staticFile("sfx/pop.wav")} volume={0.16} />
+          <Audio src={staticFile("sfx/pop.wav")} volume={0.07} />
         </Sequence>
       ))}
       {music ? (

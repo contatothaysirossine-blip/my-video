@@ -2,8 +2,11 @@ export type Word = { text: string; start: number; end: number };
 
 // Everything that differs between videos edited in this style.
 export type EditSource = {
-  // Transcoded footage in public/.
+  // Footage in public/.
   video: string;
+  // Loudness-normalised voice track in public/; when set, it replaces the
+  // footage's own audio.
+  audio?: string;
   // Length of the footage, in seconds.
   duration: number;
   words: Word[];
