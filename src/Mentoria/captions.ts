@@ -1,5 +1,6 @@
 // Transcrição palavra a palavra do vídeo bruto (segundos), revisada à mão.
-export type Word = { w: string; s: number; e: number };
+// h: palavra que faz parte de uma frase em destaque (rosa).
+export type Word = { w: string; s: number; e: number; h?: boolean };
 
 export const WORDS: Word[] = [
   { w: "Olha", s: 0.0, e: 0.94 },
@@ -49,13 +50,13 @@ export const WORDS: Word[] = [
   { w: "passado", s: 17.74, e: 18.4 },
   { w: "foi", s: 18.4, e: 18.8 },
   { w: "de", s: 18.8, e: 19.04 },
-  { w: "80K.", s: 19.04, e: 20.06 },
+  { w: "80K.", s: 19.04, e: 20.06 , h: true },
   { w: "No", s: 20.68, e: 20.94 },
   { w: "nosso", s: 20.94, e: 21.22 },
   { w: "melhor", s: 21.22, e: 21.56 },
   { w: "mês,", s: 21.56, e: 21.9 },
-  { w: "80,", s: 22.12, e: 22.48 },
-  { w: "90K.", s: 22.62, e: 23.1 },
+  { w: "80,", s: 22.12, e: 22.48 , h: true },
+  { w: "90K.", s: 22.62, e: 23.1 , h: true },
   { w: "E", s: 23.4, e: 23.68 },
   { w: "aí", s: 23.68, e: 23.8 },
   { w: "a", s: 23.8, e: 23.9 },
@@ -63,19 +64,19 @@ export const WORDS: Word[] = [
   { w: "chega", s: 24.22, e: 24.96 },
   { w: "outubro", s: 24.96, e: 25.82 },
   { w: "vendendo", s: 25.82, e: 26.3 },
-  { w: "130K!", s: 26.3, e: 27.4 },
+  { w: "130K!", s: 26.3, e: 27.4 , h: true },
   { w: "Nós", s: 29.88, e: 30.56 },
   { w: "aplicamos", s: 30.56, e: 31.24 },
   { w: "a", s: 31.24, e: 31.56 },
-  { w: "estratégia", s: 31.56, e: 32.34 },
-  { w: "anticommodity", s: 32.34, e: 33.6 },
+  { w: "estratégia", s: 31.56, e: 32.34 , h: true },
+  { w: "anticommodity", s: 32.34, e: 33.6 , h: true },
   { w: "para", s: 36.42, e: 37.02 },
   { w: "fazer", s: 37.02, e: 37.32 },
   { w: "o", s: 37.32, e: 37.44 },
   { w: "cliente", s: 37.44, e: 37.92 },
-  { w: "perceber", s: 37.92, e: 38.52 },
-  { w: "o", s: 38.52, e: 38.8 },
-  { w: "valor", s: 38.8, e: 39.0 },
+  { w: "perceber", s: 37.92, e: 38.52 , h: true },
+  { w: "o", s: 38.52, e: 38.8 , h: true },
+  { w: "valor", s: 38.8, e: 39.0 , h: true },
   { w: "do", s: 39.0, e: 39.24 },
   { w: "trabalho", s: 39.24, e: 39.58 },
   { w: "dela", s: 39.58, e: 39.92 },
@@ -92,8 +93,8 @@ export const WORDS: Word[] = [
   { w: "o", s: 44.76, e: 44.92 },
   { w: "trabalho", s: 44.92, e: 45.18 },
   { w: "dela", s: 45.18, e: 45.42 },
-  { w: "ser", s: 45.42, e: 45.78 },
-  { w: "único,", s: 45.78, e: 46.46 },
+  { w: "ser", s: 45.42, e: 45.78 , h: true },
+  { w: "único,", s: 45.78, e: 46.46 , h: true },
   { w: "mas", s: 46.92, e: 47.14 },
   { w: "que", s: 47.14, e: 47.38 },
   { w: "ainda", s: 47.38, e: 47.72 },
@@ -116,10 +117,10 @@ export const WORDS: Word[] = [
   { w: "comunicação", s: 52.84, e: 53.7 },
   { w: "que", s: 53.7, e: 54.32 },
   { w: "mostra", s: 54.32, e: 55.02 },
-  { w: "por", s: 55.02, e: 55.4 },
-  { w: "que", s: 55.4, e: 55.84 },
-  { w: "escolher", s: 55.84, e: 56.38 },
-  { w: "ela", s: 56.38, e: 56.7 },
+  { w: "por", s: 55.02, e: 55.4 , h: true },
+  { w: "que", s: 55.4, e: 55.84 , h: true },
+  { w: "escolher", s: 55.84, e: 56.38 , h: true },
+  { w: "ela", s: 56.38, e: 56.7 , h: true },
   { w: "e", s: 56.7, e: 57.1 },
   { w: "não", s: 57.1, e: 57.42 },
   { w: "apenas", s: 57.42, e: 58.32 },
@@ -141,8 +142,8 @@ export const WORDS: Word[] = [
   { w: "nossa", s: 63.2, e: 63.48 },
   { w: "aula", s: 63.48, e: 63.68 },
   { w: "como", s: 63.68, e: 63.96 },
-  { w: "ser", s: 63.96, e: 64.2 },
-  { w: "única", s: 64.2, e: 64.64 },
+  { w: "ser", s: 63.96, e: 64.2 , h: true },
+  { w: "única", s: 64.2, e: 64.64 , h: true },
   { w: "e", s: 64.64, e: 65.14 },
   { w: "transformar", s: 65.14, e: 65.66 },
   { w: "o", s: 65.66, e: 65.84 },
@@ -150,8 +151,8 @@ export const WORDS: Word[] = [
   { w: "conhecimento", s: 66.02, e: 66.58 },
   { w: "em", s: 66.58, e: 66.7 },
   { w: "um", s: 66.7, e: 66.92 },
-  { w: "negócio", s: 66.92, e: 67.26 },
-  { w: "lucrativo", s: 67.26, e: 68.38 },
+  { w: "negócio", s: 66.92, e: 67.26 , h: true },
+  { w: "lucrativo", s: 67.26, e: 68.38 , h: true },
   { w: "sem", s: 68.38, e: 68.94 },
   { w: "depender", s: 68.94, e: 69.44 },
   { w: "de", s: 69.44, e: 69.58 },
@@ -162,24 +163,24 @@ export const WORDS: Word[] = [
   { w: "mais", s: 70.7, e: 71.28 },
   { w: "cheia.", s: 71.28, e: 71.54 },
   { w: "Dia", s: 71.66, e: 71.74 },
-  { w: "15", s: 71.74, e: 71.94 },
-  { w: "de", s: 71.94, e: 72.24 },
-  { w: "novembro,", s: 72.24, e: 72.98 },
+  { w: "15", s: 71.74, e: 71.94 , h: true },
+  { w: "de", s: 71.94, e: 72.24 , h: true },
+  { w: "novembro,", s: 72.24, e: 72.98 , h: true },
   { w: "online.", s: 72.98, e: 73.66 },
   { w: "Clique", s: 74.02, e: 74.2 },
   { w: "aqui", s: 74.2, e: 74.64 },
   { w: "em", s: 74.64, e: 74.98 },
-  { w: "Saiba", s: 74.98, e: 75.18 },
-  { w: "Mais", s: 75.18, e: 75.74 },
+  { w: "Saiba", s: 74.98, e: 75.18 , h: true },
+  { w: "Mais", s: 75.18, e: 75.74 , h: true },
   { w: "e", s: 75.74, e: 76.84 },
   { w: "venha", s: 76.84, e: 77.06 },
-  { w: "ser", s: 77.06, e: 77.24 },
-  { w: "única.", s: 77.24, e: 77.56 },
+  { w: "ser", s: 77.06, e: 77.24 , h: true },
+  { w: "única.", s: 77.24, e: 77.56 , h: true },
 ];
 
 export type Chunk = { words: Word[]; s: number; e: number };
 
-// Agrupa em blocos curtos (até 3 palavras), quebrando em pausas e pontuação.
+// Agrupa em frases curtas (até 5 palavras / 30 letras), quebrando em pausas e pontuação.
 export const CHUNKS: Chunk[] = (() => {
   const out: Chunk[] = [];
   let cur: Word[] = [];
@@ -189,7 +190,8 @@ export const CHUNKS: Chunk[] = (() => {
   };
   WORDS.forEach((w, i) => {
     const prev = WORDS[i - 1];
-    if (cur.length && (cur.length >= 3 || w.s - prev.e > 0.35 || /[.,?!]$/.test(prev.w))) flush();
+    const len = cur.map((c) => c.w).join(" ").length + w.w.length + 1;
+    if (cur.length && (cur.length >= 5 || len > 30 || w.s - prev.e > 0.35 || /[.,?!]$/.test(prev.w))) flush();
     cur.push(w);
   });
   flush();
