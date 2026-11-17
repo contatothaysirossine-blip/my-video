@@ -1143,6 +1143,78 @@
     "start": 73.023,
     "end": 73.263
    }
+  ],
+  "cues": [
+   {
+    "t": 0,
+    "mode": "split",
+    "img": "angry1"
+   },
+   {
+    "t": 5.45,
+    "mode": "speaker"
+   },
+   {
+    "t": 7.81,
+    "mode": "split",
+    "img": "man_pensive2"
+   },
+   {
+    "t": 11.49,
+    "mode": "image",
+    "img": "sad3"
+   },
+   {
+    "t": 16.97,
+    "mode": "split",
+    "img": "man_dark"
+   },
+   {
+    "t": 22.75,
+    "mode": "speaker"
+   },
+   {
+    "t": 26.23,
+    "mode": "image",
+    "img": "eye"
+   },
+   {
+    "t": 28.93,
+    "mode": "split",
+    "img": "mirror1"
+   },
+   {
+    "t": 31.72,
+    "mode": "speaker"
+   },
+   {
+    "t": 37.653,
+    "mode": "split",
+    "img": "shadow_face"
+   },
+   {
+    "t": 45.553,
+    "mode": "image",
+    "img": "silhouette2"
+   },
+   {
+    "t": 50.173,
+    "mode": "speaker"
+   },
+   {
+    "t": 55.993,
+    "mode": "split",
+    "img": "silhouette4"
+   },
+   {
+    "t": 64.953,
+    "mode": "image",
+    "img": "window_dark"
+   },
+   {
+    "t": 71.353,
+    "mode": "speaker"
+   }
   ]
  },
  {
@@ -2343,6 +2415,81 @@
     "start": 70.843,
     "end": 71.383
    }
+  ],
+  "cues": [
+   {
+    "t": 0,
+    "mode": "split",
+    "img": "man_pensive1"
+   },
+   {
+    "t": 7.28,
+    "mode": "speaker"
+   },
+   {
+    "t": 12.953,
+    "mode": "split",
+    "img": "man_dark"
+   },
+   {
+    "t": 17.707,
+    "mode": "speaker"
+   },
+   {
+    "t": 21.513,
+    "mode": "image",
+    "img": "sad2"
+   },
+   {
+    "t": 24.94,
+    "mode": "speaker"
+   },
+   {
+    "t": 29.753,
+    "mode": "split",
+    "img": "sad4"
+   },
+   {
+    "t": 33.033,
+    "mode": "speaker"
+   },
+   {
+    "t": 37.787,
+    "mode": "split",
+    "img": "think4"
+   },
+   {
+    "t": 42.48,
+    "mode": "speaker"
+   },
+   {
+    "t": 44.04,
+    "mode": "image",
+    "img": "sad3"
+   },
+   {
+    "t": 48.86,
+    "mode": "speaker"
+   },
+   {
+    "t": 52.52,
+    "mode": "split",
+    "img": "couple_bed"
+   },
+   {
+    "t": 58.953,
+    "mode": "image",
+    "img": "sad1"
+   },
+   {
+    "t": 64.713,
+    "mode": "split",
+    "img": "couple_hug"
+   },
+   {
+    "t": 67.733,
+    "mode": "speaker"
+   }
   ]
  },
  {
@@ -3463,6 +3610,69 @@
     "text": "isso.",
     "start": 66.277,
     "end": 66.557
+   }
+  ],
+  "cues": [
+   {
+    "t": 0,
+    "mode": "split",
+    "img": "mirror2"
+   },
+   {
+    "t": 4.28,
+    "mode": "split",
+    "img": "smile"
+   },
+   {
+    "t": 7.54,
+    "mode": "speaker"
+   },
+   {
+    "t": 13.06,
+    "mode": "image",
+    "img": "angry1"
+   },
+   {
+    "t": 16.88,
+    "mode": "split",
+    "img": "confident"
+   },
+   {
+    "t": 20.28,
+    "mode": "image",
+    "img": "alone_sun"
+   },
+   {
+    "t": 26.36,
+    "mode": "speaker"
+   },
+   {
+    "t": 31.16,
+    "mode": "split",
+    "img": "angry2"
+   },
+   {
+    "t": 34.36,
+    "mode": "image",
+    "img": "laundry"
+   },
+   {
+    "t": 38.66,
+    "mode": "split",
+    "img": "couple_bed2"
+   },
+   {
+    "t": 42.687,
+    "mode": "speaker"
+   },
+   {
+    "t": 55.307,
+    "mode": "split",
+    "img": "mirror1"
+   },
+   {
+    "t": 62.407,
+    "mode": "speaker"
    }
   ]
  },
@@ -4831,6 +5041,78 @@
     "start": 78.53,
     "end": 78.83
    }
+  ],
+  "cues": [
+   {
+    "t": 0,
+    "mode": "split",
+    "img": "think1"
+   },
+   {
+    "t": 4.06,
+    "mode": "speaker"
+   },
+   {
+    "t": 12.06,
+    "mode": "split",
+    "img": "eye"
+   },
+   {
+    "t": 16.6,
+    "mode": "speaker"
+   },
+   {
+    "t": 22.04,
+    "mode": "split",
+    "img": "family1"
+   },
+   {
+    "t": 27.16,
+    "mode": "image",
+    "img": "mom_kid"
+   },
+   {
+    "t": 31.26,
+    "mode": "split",
+    "img": "travel1"
+   },
+   {
+    "t": 36.553,
+    "mode": "image",
+    "img": "work1"
+   },
+   {
+    "t": 40.04,
+    "mode": "speaker"
+   },
+   {
+    "t": 47.9,
+    "mode": "split",
+    "img": "sad2"
+   },
+   {
+    "t": 52.88,
+    "mode": "image",
+    "img": "think4"
+   },
+   {
+    "t": 62.08,
+    "mode": "speaker"
+   },
+   {
+    "t": 64.1,
+    "mode": "split",
+    "img": "travel2"
+   },
+   {
+    "t": 69.5,
+    "mode": "speaker"
+   },
+   {
+    "t": 74.887,
+    "mode": "image",
+    "img": "mirror1"
+   }
   ]
  },
  {
@@ -6148,6 +6430,83 @@
     "text": "transformar.",
     "start": 78.613,
     "end": 79.213
+   }
+  ],
+  "cues": [
+   {
+    "t": 0,
+    "mode": "split",
+    "img": "journal1"
+   },
+   {
+    "t": 5.043,
+    "mode": "split",
+    "img": "man_pensive2"
+   },
+   {
+    "t": 12.723,
+    "mode": "image",
+    "img": "silhouette1"
+   },
+   {
+    "t": 14.223,
+    "mode": "speaker"
+   },
+   {
+    "t": 19.217,
+    "mode": "split",
+    "img": "mirror2"
+   },
+   {
+    "t": 24.337,
+    "mode": "speaker"
+   },
+   {
+    "t": 27.73,
+    "mode": "split",
+    "img": "man_dark"
+   },
+   {
+    "t": 30.99,
+    "mode": "image",
+    "img": "cozy_tea"
+   },
+   {
+    "t": 34.97,
+    "mode": "split",
+    "img": "couple_bed"
+   },
+   {
+    "t": 37.477,
+    "mode": "speaker"
+   },
+   {
+    "t": 43.943,
+    "mode": "image",
+    "img": "silhouette3"
+   },
+   {
+    "t": 48.643,
+    "mode": "split",
+    "img": "sad5"
+   },
+   {
+    "t": 51.183,
+    "mode": "image",
+    "img": "walk1"
+   },
+   {
+    "t": 60.943,
+    "mode": "speaker"
+   },
+   {
+    "t": 66.017,
+    "mode": "split",
+    "img": "think3"
+   },
+   {
+    "t": 73.363,
+    "mode": "speaker"
    }
   ]
  }

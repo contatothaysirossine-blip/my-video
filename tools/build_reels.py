@@ -21,7 +21,19 @@ for p in picks:
             for w in r:
                 caps.append({"text": w["w"].strip(), "start": round(t + w["s"] - s0, 3), "end": round(t + w["e"] - s0, 3)})
             t += s1 - s0
-    out.append({k: v for k, v in p.items() if k != "ranges"} | {"segments": segs, "words": caps})
+    def to_out(raw):
+        acc = 0.0
+        for sg in segs:
+            if raw < sg["end"]:
+                return round(acc + max(0.0, raw - sg["start"]), 3)
+            acc += sg["end"] - sg["start"]
+        return round(acc, 3)
+    cues = [{"t": 0 if i == 0 else to_out(c[0]), "mode": c[1], **({"img": c[2]} if len(c) > 2 else {})} for i, c in enumerate(p.get("cues", []))]
+    starts = [w["start"] for w in caps]
+    for c in cues[1:]:
+        near = min(starts, key=lambda x: abs(x - c["t"]))
+        if abs(near - c["t"]) < 0.6: c["t"] = round(max(0, near - 0.05), 3)
+    out.append({k: v for k, v in p.items() if k not in ("ranges", "cues")} | {"segments": segs, "words": caps, "cues": cues})
     print(p["id"], f"{t:.1f}s", len(segs), "cuts")
 FIX={"agora":"Agora","transparentecer":"transparecer","Flá,":"Flávia,"}
 for r in out:

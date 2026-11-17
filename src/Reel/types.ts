@@ -1,8 +1,13 @@
 export type Word = { text: string; start: number; end: number };
 
+export type CueMode = "speaker" | "split" | "image";
+
+/** From time `t` (reel seconds) on, show this layout until the next cue. */
+export type Cue = { t: number; mode: CueMode; img?: string };
+
 export type ReelData = {
   id: string;
-  /** Hook shown on top of the reel */
+  /** Hook shown at the start of the reel */
   title: string;
   /** Lowercased words of the title painted in gold */
   titleHighlight?: string[];
@@ -12,4 +17,6 @@ export type ReelData = {
   segments: { start: number; end: number }[];
   /** Caption words, times relative to the reel timeline (seconds) */
   words: Word[];
+  /** Layout changes: talking head, split screen (image on top) or full image */
+  cues: Cue[];
 };
