@@ -1,0 +1,17 @@
+[
+ {"id":"Reel1-Sombras","title":"Por que o outro te tira tanto do sério?","titleHighlight":["sério"],
+  "emphasis":["sombra","sombras","raiva","incomoda","incomodam","jung","egoísta","controlador"],
+  "ranges":[[7.6,34.38],[70.18,75.40],[79.0,85.51],[229.77,265.33]]},
+ {"id":"Reel2-MaridoNaoFala","title":"Seu marido nunca fala o que sente?","titleHighlight":["sente?"],
+  "emphasis":["emoções","magoada","falar","fala","carente","medo","comentários"],
+  "ranges":[[110.11,123.33],[127.07,131.57],[154.49,213.35]]},
+ {"id":"Reel3-MaisComplexas","title":"Você é mais complexa do que imagina","titleHighlight":["complexa"],
+  "emphasis":["egoísmo","raiva","cuidada","sozinha","complexas","sobrecarregada","independente"],
+  "ranges":[[265.89,333.69]]},
+ {"id":"Reel4-ACriticaRevela","title":"Aquilo que você critica fala sobre você","titleHighlight":["critica"],
+  "emphasis":["egoísta","liberdade","julgamos","julga","mesma","crítica","incomodar"],
+  "ranges":[[464.53,545.83]]},
+ {"id":"Reel5-OQueTeIrrita","title":"O que mais te irrita no seu marido?","titleHighlight":["irrita"],
+  "emphasis":["irrita","egoísta","sombra","coragem","transformar","culpa","irritação"],
+  "ranges":[[602.85,633.62],[668.18,675.16],[689.6,699.04],[703.26,741.08]]}
+]
