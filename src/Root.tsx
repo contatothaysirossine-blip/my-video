@@ -1,5 +1,6 @@
 import { Composition, Folder } from "remotion";
 import { HelloWorld } from "./HelloWorld";
+import { AudioPlayerVideo } from "./AudioPlayerVideo";
 import { Logo } from "./HelloWorld/Logo";
 import { Title } from "./HelloWorld/Title";
 
@@ -50,7 +51,14 @@ export const RemotionRoot: React.FC = () => {
           titleColor: "#000000",
         }}
       />
-
+      <Composition
+        id="AudioPlayerVideo"
+        component={AudioPlayerVideo}
+        durationInFrames={1154}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
     </>
   );
 };
