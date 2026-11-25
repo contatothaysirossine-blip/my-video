@@ -2,9 +2,9 @@ import {
   AbsoluteFill,
   interpolate,
   OffthreadVideo,
+  Sequence,
   staticFile,
   useCurrentFrame,
-  useVideoConfig,
 } from "remotion";
 import waveform from "./waveform.json";
 
@@ -32,24 +32,45 @@ const PauseIcon: React.FC = () => (
   </div>
 );
 
+// Trecho do vídeo em que a fala acontece (3,03s até 41,48s, a 30 fps).
+const AUDIO_START = 91;
+const AUDIO_END = 1244;
+
 export const AudioPlayerVideo: React.FC = () => {
+  return (
+    <AbsoluteFill style={{ backgroundColor: "black" }}>
+      <OffthreadVideo src={staticFile("video.mp4")} />
+      <Sequence
+        from={AUDIO_START}
+        durationInFrames={AUDIO_END - AUDIO_START}
+        layout="none"
+      >
+        <AudioPlayer />
+      </Sequence>
+    </AbsoluteFill>
+  );
+};
+
+const AudioPlayer: React.FC = () => {
+  // Dentro da Sequence o frame começa em 0 no início da fala.
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
+  const durationInFrames = AUDIO_END - AUDIO_START;
 
   const bars = waveform as number[];
   const totalWidth = bars.length * BAR_WIDTH + (bars.length - 1) * BAR_GAP;
   const progress = frame / (durationInFrames - 1);
   const playheadX = progress * totalWidth;
 
-  // Pequeno fade-in do player no início
-  const opacity = interpolate(frame, [0, 10], [0, 1], {
-    extrapolateRight: "clamp",
-  });
+  // Fade-in quando a fala começa e fade-out quando termina
+  const opacity = interpolate(
+    frame,
+    [0, 8, durationInFrames - 8, durationInFrames],
+    [0, 1, 1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
+  );
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "black" }}>
-      <OffthreadVideo src={staticFile("video.mp4")} />
-
+    <AbsoluteFill>
       <div
         style={{
           position: "absolute",
@@ -60,6 +81,7 @@ export const AudioPlayerVideo: React.FC = () => {
           alignItems: "center",
           justifyContent: "center",
           opacity,
+          filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.55))",
         }}
       >
         <PauseIcon />

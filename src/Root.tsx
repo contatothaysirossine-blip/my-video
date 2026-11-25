@@ -54,7 +54,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="AudioPlayerVideo"
         component={AudioPlayerVideo}
-        durationInFrames={1154}
+        durationInFrames={1918}
         fps={30}
         width={1080}
         height={1920}
