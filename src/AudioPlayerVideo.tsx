@@ -32,9 +32,9 @@ const PauseIcon: React.FC = () => (
   </div>
 );
 
-// Trecho do vídeo em que a fala acontece (3,03s até 41,48s, a 30 fps).
-const AUDIO_START = 91;
-const AUDIO_END = 1244;
+// Trecho do vídeo em que a fala acontece (3,03s até 41,48s, a 60 fps).
+const AUDIO_START = 182;
+const AUDIO_END = 2489;
 
 export const AudioPlayerVideo: React.FC = () => {
   return (
@@ -64,7 +64,7 @@ const AudioPlayer: React.FC = () => {
   // Fade-in quando a fala começa e fade-out quando termina
   const opacity = interpolate(
     frame,
-    [0, 8, durationInFrames - 8, durationInFrames],
+    [0, 16, durationInFrames - 16, durationInFrames],
     [0, 1, 1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
